@@ -21,3 +21,24 @@ export interface SelectProps {
     onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     error?: string;
 }
+
+export interface RegisterData {
+    first_name: string;
+    middle_name: string;
+    last_name: string;
+    academic_session: string;
+    admission_class: string;
+    gender: string;
+    dob: string;
+    about_school: string;
+    primary_contact_name: string;
+    primary_contact_relation: string;
+    primary_contact_number: string;
+    secondary_contact_number: string;
+    address_1: string;
+    address_2: string;
+    country: string;
+    state: string;
+    city: string;
+    pin_code: string;
+}
