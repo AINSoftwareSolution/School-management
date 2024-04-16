@@ -21,10 +21,13 @@ body {
 
 }
 
-
 .auth {
   background-image: url('https://i.pinimg.com/originals/cd/19/c6/cd19c6995371fb9fe41c90a1eb4e7b56.jpg');
 }
 .login-image{
   background-image: url('https://i.pinimg.com/originals/cd/19/c6/cd19c6995371fb9fe41c90a1eb4e7b56.jpg');
+}
+
+label {
+line-height: 0.25rem !important;
 }

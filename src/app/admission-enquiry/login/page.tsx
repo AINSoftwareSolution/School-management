@@ -1,51 +1,22 @@
 'use client'
 import Link from "next/link"
-import { InputField } from "@/app/component"
-import { useState, ChangeEvent, FormEvent } from "react";
+import { InputField } from "@/component"
+import { admissionLoginvalidationSchema } from "@/app/utilis/schema";
+import { useFormik } from "formik";
 
 const Login = () => {
-    const [formData, setFormData] = useState({
-        username: '',
-        password: '',
+    const formik = useFormik({
+        initialValues: {
+            username: '',
+            password: ''
+        },
+        validationSchema: admissionLoginvalidationSchema,
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
     });
+    const { values, handleChange, errors, handleSubmit } = formik;
 
-    // State to manage form errors
-    const [errors, setErrors] = useState<{
-        username: string;
-        password: string;
-    }>({
-        username: '',
-        password: ''
-    });
-
-    // Function to handle input changes
-    const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
-        const { name, value, type, checked } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: type === 'checkbox' ? checked : value
-        }));
-    };
-
-    // Function to handle form submission
-    const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
-        e.preventDefault();
-        // Perform validation
-        const { username, password } = formData;
-        const newErrors: { username: string; password: string } = { username: '', password: '' };
-        if (!username.trim()) {
-            newErrors.username = 'Username is required';
-        }
-        if (!password.trim()) {
-            newErrors.password = 'Password is required';
-        }
-        setErrors(newErrors);
-        // If there are no errors, submit the form
-        if (!newErrors.username && !newErrors.password) {
-            // Submit the form, you can add your logic here
-            console.log('Form submitted:', formData);
-        }
-    };
     return (
         <section className="bg-gray-50">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -64,8 +35,8 @@ const Login = () => {
                                     label="Username"
                                     name="username"
                                     type="text"
-                                    value={formData.username}
-                                    onChange={handleInputChange}
+                                    value={values.username}
+                                    onChange={handleChange}
                                     error={errors.username}
                                 />
                             </div>
@@ -74,21 +45,13 @@ const Login = () => {
                                     label="Password"
                                     name="password"
                                     type="password"
-                                    value={formData.password}
-                                    onChange={handleInputChange}
+                                    value={values.password}
+                                    onChange={handleChange}
                                     error={errors.password}
                                 />
                             </div>
                             <div className="flex items-center justify-between">
-                                <div className="flex items-start">
-                                    <div className="flex items-center h-5">
-                                        <input id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" />
-                                    </div>
-                                    <div className="ml-3 text-sm">
-                                        <label htmlFor="remember" className="text-gray-500">Remember me</label>
-                                    </div>
-                                </div>
-                                <Link href="#" className="text-sm font-medium text-primary-600 hover:underline">Forgot password?</Link>
+                                <Link href="#" className="text-sm font-medium text-primary-600 hover:underline items-end">Forgot password?</Link>
                             </div>
                             <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
                             <p className="text-sm font-light text-gray-500">
