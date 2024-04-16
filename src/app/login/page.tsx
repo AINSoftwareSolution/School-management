@@ -1,5 +1,4 @@
-"use client";
-import { Tabs, TabPane } from "../component";
+import { TabPane, Tabs } from "@/component";
 
 const Login = () => {
   return (
@@ -8,7 +7,7 @@ const Login = () => {
         <div className="max-w-screen-lg w-full p-4">
           <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
             <div className="login-image relative">
-              <img
+              {/* <img
                 src="https://i.pinimg.com/originals/cd/19/c6/cd19c6995371fb9fe41c90a1eb4e7b56.jpg"
                 alt="Login Image"
                 className="w-full h-auto" />
@@ -25,18 +24,18 @@ const Login = () => {
                   src="https://freeiconshop.com/wp-content/uploads/edd/app-store-badge.png"
                   alt="App Store"
                 />
-              </button>
+              </button> */}
             </div>
 
             <div>
-            <div className="bg-white rounded-lg p-4">
-            {/* Sign In Section */}
-            <div className="bg-blue-500 text-white rounded-lg p-4">
-              <h2 className="text-3xl font-semibold mb-2 text-center">Sign In</h2>
+              <div className="bg-white rounded-lg p-4">
+                {/* Sign In Section */}
+                <div className="bg-blue-500 text-white rounded-lg p-4">
+                  <h2 className="text-3xl font-semibold mb-2 text-center">Sign In</h2>
                 </div>
 
                 <Tabs>
-                <TabPane title="Parent">
+                  <TabPane title="Parent">
                     <div>
                       <form>
                         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -209,7 +208,7 @@ const Login = () => {
                   <div className="w-full h-[1px] bg-black"> </div>
                   <p className="absolute text-black/80 bg-slate-50">or</p>
                 </div>
-               <br></br>
+                <br></br>
                 <div className="w-full flex itmes-center justify-center">
                   <p className="text-sm font-normal text-[#060606]">Need help? Go to the help center</p>
                 </div>

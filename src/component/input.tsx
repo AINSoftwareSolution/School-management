@@ -1,7 +1,7 @@
 import React from 'react';
-import { InputProps } from '../utilis/type';
+import { InputProps } from '../app/utilis/type';
 
-const InputField: React.FC<InputProps> = ({ label, name, type = 'text', value, onChange, error }) => {
+const InputField: React.FC<InputProps> = ({ label, name, type = 'text', value, onChange, error, disabled = false }) => {
     return (
         <div className="relative z-0 my-4">
             <input
@@ -10,6 +10,7 @@ const InputField: React.FC<InputProps> = ({ label, name, type = 'text', value, o
                 id={name}
                 value={value}
                 onChange={onChange}
+                disabled={disabled}
                 className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 
                 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer ${error ? 'border-red-500' : ''}`}
                 placeholder=" "

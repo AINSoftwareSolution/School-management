@@ -1,4 +1,4 @@
-import { ContainerProps } from '../utilis/type';
+import { ContainerProps } from '../app/utilis/type';
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
     return (

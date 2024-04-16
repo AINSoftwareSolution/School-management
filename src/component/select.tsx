@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectProps } from "../utilis/type";
+import { SelectProps } from "../app/utilis/type";
 
 const SelectField: React.FC<SelectProps> = ({ name, label, options, value, onChange, error }) => {
     return (
