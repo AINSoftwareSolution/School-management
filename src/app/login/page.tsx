@@ -1,4 +1,5 @@
-import { TabPane, Tabs } from "@/component";
+"use client"
+import { TabPane, Tabs } from "@/app/component";
 
 const Login = () => {
   return (

@@ -17,6 +17,7 @@ export const admissionRegistervalidationSchema = object().shape({
     primary_contact_name: string().required("Primary contact name is required"),
     primary_contact_relation: string().required("Primary contact relation is required"),
     primary_contact_number: string().required("Primary contact number is required"),
+    primary_email_id: string().email("Enter proper email ID").required("Primary contact number is required"),
     secondary_contact_number: string(),
     address_1: string().required("Address is required"),
     address_2: string().required("Address is required"),

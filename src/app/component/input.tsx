@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputProps } from '../app/utilis/type';
+import { InputProps } from '../utilis/type';
 
 const InputField: React.FC<InputProps> = ({ label, name, type = 'text', value, onChange, error, disabled = false }) => {
     return (
