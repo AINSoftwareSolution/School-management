@@ -4,7 +4,7 @@ import { admissionRegistervalidationSchema } from "@/app/utilis/schema";
 import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import { GenderOptions, admissionClassoption } from "@/app/utilis/data";
-import { InputField, SelectField } from "@/component";
+import { InputField, SelectField } from "@/app/component";
 import { useState } from "react";
 
 const Register = () => {
@@ -20,6 +20,7 @@ const Register = () => {
         about_school: "",
         primary_contact_name: "",
         primary_contact_relation: "",
+        primary_email_id: "",
         primary_contact_number: "",
         secondary_contact_number: "",
         address_1: "",
@@ -38,7 +39,7 @@ const Register = () => {
             alert(JSON.stringify(values, null, 2));
             try {
                 setLoading(true)
-                const res = await fetch("/api/admissionRegister", {
+                const res = await fetch("/api/admission/register", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -49,6 +50,7 @@ const Register = () => {
                 if (res.ok) {
                     alert('user regsiter')
                     setLoading(false)
+                    router.push('/admission-enquiry/login')
                 } else {
                     console.log("User registration failed.");
                     setLoading(false)
@@ -80,8 +82,12 @@ const Register = () => {
                                 <InputField label="How Did You Get To Know About Our School" name='about_school' value={values?.about_school} onChange={handleChange} error={errors.about_school} />
                                 <InputField label="Primary Contact Name" name='primary_contact_name' value={values?.primary_contact_name} onChange={handleChange} error={errors.primary_contact_name} />
                                 <InputField label="Primary Contact Relation" name='primary_contact_relation' value={values?.primary_contact_relation} onChange={handleChange} error={errors.primary_contact_relation} />
+                                <InputField label="Primary Email Id" name='primary_email_id' value={values?.primary_email_id} onChange={handleChange} error={errors.primary_email_id} />
                                 <InputField label="Primary Contact Number" name='primary_contact_number' value={values?.primary_contact_number} onChange={handleChange} error={errors.primary_contact_number} />
                                 <InputField label="Secondary Contact Number" name='secondary_contact_number' value={values?.secondary_contact_number} onChange={handleChange} error={errors.secondary_contact_number} />
+                                <div></div>
+                                <div></div>
+                                <div></div>
                                 <h6 className="font-[600]"> Address </h6>
                                 <div></div>
                                 <div></div>

@@ -1,20 +1,46 @@
 'use client'
 import Link from "next/link"
-import { InputField } from "@/component"
+import { InputField } from "@/app/component"
 import { admissionLoginvalidationSchema } from "@/app/utilis/schema";
 import { useFormik } from "formik";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
+    const [loading, setLoading] = useState(false)
+    const router = useRouter();
     const formik = useFormik({
         initialValues: {
             username: '',
             password: ''
         },
         validationSchema: admissionLoginvalidationSchema,
-        onSubmit: values => {
+        onSubmit: async values => {
             alert(JSON.stringify(values, null, 2));
+            try {
+                setLoading(true)
+                const res = await fetch("/api/admission/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formik.values),
+                });
+
+                if (res.ok) {
+                    alert('user regsiter')
+                    setLoading(false)
+                    router.push('/admission-enquiry/details')
+                } else {
+                    console.log("User registration failed.");
+                    setLoading(false)
+                }
+            } catch (error) {
+                console.error("An error occurred during registration:", error);
+            }
         },
-    });
+    })
+
     const { values, handleChange, errors, handleSubmit } = formik;
 
     return (

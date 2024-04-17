@@ -2,6 +2,8 @@ import mongoose, { Schema } from "mongoose";
 
 // Define the Mongoose schema
 const registerSchema = new Schema({
+  username: { type: String},
+  password: { type: String},
   first_name: { type: String, required: true },
   middle_name: { type: String, required: false },
   last_name: { type: String, required: true },
@@ -13,6 +15,7 @@ const registerSchema = new Schema({
   primary_contact_name: { type: String, required: true },
   primary_contact_relation: { type: String, required: true },
   primary_contact_number: { type: String, required: true },
+  primary_email_id: { type: String, required: true },
   secondary_contact_number: { type: String, required: false },
   address_1: { type: String, required: true },
   address_2: { type: String, required: false },
