@@ -1,10 +1,12 @@
 'use client'
-import { Container, TabPane, Tabs } from "./component";
+import { Container } from "./component";
 
 export default function Home() {
   return (
     <Container>
-      <></>
+      <>
+
+      </>
     </Container>
   );
 }
