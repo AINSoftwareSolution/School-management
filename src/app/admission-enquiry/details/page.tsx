@@ -1,5 +1,5 @@
 'use client'
-import { AcadamicDetails, Confirmation, ContactDetails, StudentDetails } from "@/app/container";
+import { AcadamicDetails, Confirmation, ContactDetails, DocumentUpload, StudentDetails } from "@/app/container";
 import { useState } from "react";
 
 const Details: React.FC = () => {
@@ -27,36 +27,43 @@ const Details: React.FC = () => {
     const handleBack = (): void => {
         setActiveTab(prev => Math.max(prev - 1, 0));
     };
+    const handleTabClick = (index: number): void => {
+        setActiveTab(index);
+    };
 
     // Array of form components
     const formElements: JSX.Element[] = [
         <StudentDetails key={0} />,
         <ContactDetails key={1} />,
         <AcadamicDetails key={2} />,
-        <Confirmation key={3} />
+        <DocumentUpload key={3} />,
+        <Confirmation key={4} />,
     ];
 
     return (
         <section className="bg-purple-50 min-h-screen">
-            <div className="flex flex-col items-center justify-center px-8 pb-8 mx-auto pt-[8rem]">
+            <div className="flex flex-col items-center justify-center px-8 pb-8 mx-auto pt-[14rem] md:pt-[8rem] ">
                 <div className="w-full bg-white rounded-lg shadow md:mt-0 xl:p-0">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                         {/* Step indicator */}
-                        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-500 sm:text-base">
+                        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-500 sm:text-base  flex-wrap md:flex-nowrap">
                             {formElements.map((_, index) => (
                                 <li key={index}
+                                    onClick={() => handleTabClick(index)}
                                     className={`${index <= activeTab ? 'text-blue-600 after:border-blue-200' : 'text-gray after:border-gray-200'} 
                                     ${index === formElements.length - 1 ? '' : 'after:border-b  after:border-1 after:hidden'}
-                                    flex md:w-full items-center  sm:after:content-[''] after:w-full after:h-1  sm:after:inline-block after:mx-6 xl:after:mx-10`}>
+                                    flex md:w-full items-center  sm:after:content-[''] after:w-full after:h-1  sm:after:inline-block after:mx-6 xl:after:mx-10 cursor-pointer`}>
                                     <span className="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200">
                                         {
                                             index <= activeTab ? <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                             </svg> : <span className="me-2">{index + 1}</span>
                                         }
-
-                                        {index === 0 ? 'Student' : index === 1 ? 'Contact' : index === 2 ? 'Academic' : 'Confirmation'}
-                                        <span className="hidden sm:inline-flex sm:ms-2">Info</span>
+                                        {index === 0 ? <> Student <span className="hidden sm:inline-flex sm:ms-2"> Details </span></> : 
+                                        index === 1 ? <> Contact <span className="hidden sm:inline-flex sm:ms-2"> Details </span></>  : 
+                                        index === 2 ? <> Acadamic <span className="hidden sm:inline-flex sm:ms-2"> Details </span></>  : 
+                                        index === 3 ? <> Document <span className="hidden sm:inline-flex sm:ms-2"> Upload </span></>  : 
+                                        'Confirmation'}
                                     </span>
                                 </li>
                             ))}
