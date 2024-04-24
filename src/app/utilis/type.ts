@@ -18,8 +18,8 @@ export interface SelectProps {
     label: string
     name: string
     options: { value: string; label: string }[];
-    value: string;
-    onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+    value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     error?: string;
 }
 

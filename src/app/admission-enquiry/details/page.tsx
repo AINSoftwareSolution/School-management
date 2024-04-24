@@ -4,22 +4,16 @@ import { useState } from "react";
 
 const Details: React.FC = () => {
     // State to manage form data
-    const [data, setData] = useState<any>({
-        name: "",
-        email: "",
-        dob: "",
-        gender: "male",
-        address: "",
-    });
+    const [data, setData] = useState();
 
     // Function to handle input changes
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void => {
-        const { name, value } = event.target;
-        setData({
-            ...data,
-            [name]: value,
-        });
-    };
+    // const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void => {
+    //     const { name, value } = event.target;
+    //     setData({
+    //         ...data,
+    //         [name]: value,
+    //     });
+    // };
 
     // State to track active tab
     const [activeTab, setActiveTab] = useState<number>(0);
@@ -43,7 +37,7 @@ const Details: React.FC = () => {
     ];
 
     return (
-        <section className="bg-purple-50">
+        <section className="bg-purple-50 min-h-screen">
             <div className="flex flex-col items-center justify-center px-8 pb-8 mx-auto pt-[8rem]">
                 <div className="w-full bg-white rounded-lg shadow md:mt-0 xl:p-0">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -52,7 +46,7 @@ const Details: React.FC = () => {
                             {formElements.map((_, index) => (
                                 <li key={index}
                                     className={`${index <= activeTab ? 'text-blue-600 after:border-blue-200' : 'text-gray after:border-gray-200'} 
-                                    ${index == formElements.length+1 ? '' : 'after:border-b  after:border-1 after:hidden'}
+                                    ${index === formElements.length - 1 ? '' : 'after:border-b  after:border-1 after:hidden'}
                                     flex md:w-full items-center  sm:after:content-[''] after:w-full after:h-1  sm:after:inline-block after:mx-6 xl:after:mx-10`}>
                                     <span className="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200">
                                         {
@@ -67,41 +61,50 @@ const Details: React.FC = () => {
                                 </li>
                             ))}
                         </ol>
+                    </div>
+                </div>
 
-                        {/* Render active form element */}
-                        <div className="min-h-screen flex flex-col justify-center">
+
+                {/* Render active form element */}
+                <div className="w-full bg-white rounded-lg shadow  xl:p-0 mt-4">
+                    <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <div className="flex flex-col justify-center">
                             <div>{formElements[activeTab]}</div>
-                            {/* Navigation buttons */}
-                            <div className="flex flex-wrap gap-x-6 mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div className="w-full bg-white rounded-lg shadow  xl:p-0  mt-4 ">
+                    <div className="p-6 space-y-4 md:space-y-6 sm:p-8 ">
+                        <div className="flex flex-wrap gap-x-6 mx-auto justify-between w-full">
+                            <button
+                                disabled={activeTab === 0}
+                                onClick={handleBack}
+                                className={`px-4 py-2 rounded-xl bg-blue-600 text-white ${activeTab === 0
+                                    ? 'opacity-50 bg-slate-600'
+                                    : 'opacity-100'
+                                    }`}
+                            >
+                                Back
+                            </button>
+                            <button
+                                disabled={activeTab === formElements.length - 1}
+                                onClick={handleNext}
+                                className={`px-4 py-2 rounded-xl bg-blue-600 text-white ${activeTab === formElements.length - 1
+                                    ? 'opacity-50 bg-slate-600'
+                                    : 'opacity-100'
+                                    }`}
+                            >
+                                Next
+                            </button>
+                            {activeTab === formElements.length - 1 && (
                                 <button
-                                    disabled={activeTab === 0}
-                                    onClick={handleBack}
-                                    className={`px-4 py-2 rounded-xl bg-blue-600 text-white ${activeTab === 0
-                                        ? 'opacity-50 bg-slate-600'
-                                        : 'opacity-100'
-                                        }`}
+                                    className="px-4 py-2 rounded-xl bg-blue-600 text-white"
+                                    onClick={() => console.log(data)}
                                 >
-                                    Back
+                                    Submit
                                 </button>
-                                <button
-                                    disabled={activeTab === formElements.length - 1}
-                                    onClick={handleNext}
-                                    className={`px-4 py-2 rounded-xl bg-blue-600 text-white ${activeTab === formElements.length - 1
-                                        ? 'opacity-50 bg-slate-600'
-                                        : 'opacity-100'
-                                        }`}
-                                >
-                                    Next
-                                </button>
-                                {activeTab === formElements.length - 1 && (
-                                    <button
-                                        className="px-4 py-2 rounded-xl bg-blue-600 text-white"
-                                        onClick={() => console.log(data)}
-                                    >
-                                        Submit
-                                    </button>
-                                )}
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>
