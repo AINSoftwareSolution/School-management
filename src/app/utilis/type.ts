@@ -47,3 +47,7 @@ export interface RegisterData {
 export interface UploadProps {
   label: string;
 }
+
+export interface TabsProps {
+  children: ReactNode[];
+}
