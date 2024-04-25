@@ -3,7 +3,6 @@ import React, {  useState } from 'react';
 import { TabsProps } from '../utilis/type';
 
 
-
 const Tabs: React.FC<TabsProps> = ({ children }) => {
     const [activeTab, setActiveTab] = useState(0);
 
