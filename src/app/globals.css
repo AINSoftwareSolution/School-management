@@ -42,6 +42,70 @@ line-height: 0.25rem !important;
 .standardCurriculum{
   background-image: url('../app/utilis//Images/standard.jpg');
 }
+.bg-white {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.activity {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.activity:hover {
+  border-color: #4a90e2; /* Change border color on hover */
+}
+
+.activity h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.activity p {
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.activity-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.activity-icon svg {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.activity-description {
+  text-align: left;
+}
+
+
+  
+
+
   
 
   
