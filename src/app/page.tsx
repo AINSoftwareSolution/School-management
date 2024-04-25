@@ -46,7 +46,7 @@ export default function Home() {
             </h4>
             <hr className="w-16 border-t-2 border-blue-400"></hr>
             <p className="text-gray-600">
-              Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi
+              Cum sociis natoque penatibus et ultrices volutpat. Nullam wisiss
               ultricies a, gravida vitae, dapibus risus ante sodales lectus. Cum
               sociis natoque penatibus et ultrices volutpat. Nullam wisi
               ultricies a, gravida vitae, dapibus risus ante sodales lectus.
