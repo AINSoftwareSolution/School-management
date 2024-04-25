@@ -13,7 +13,7 @@ const Register = () => {
         first_name: "",
         middle_name: "",
         last_name: "",
-        academic_session: "2024-2025",
+        academic_year: "2024-2025",
         admission_class: "",
         gender: "",
         dob: "",
@@ -70,12 +70,13 @@ const Register = () => {
                         <h1 className="text-xl font-bold leading-tight tracking-tight text-gray md:text-2xl">
                             Create and account
                         </h1>
+                        <p className="font-[400]">Enter the name as mentioned in the birth certificate.</p>
                         <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                             <div className="grid grid-col-1 md:grid-cols-4 gap-4">
-                                <InputField label="First Name" name="first_name" value={values?.first_name} onChange={handleChange} error={errors.first_name} />
+                                <InputField label="Applicant First Name" name="first_name" value={values?.first_name} onChange={handleChange} error={errors.first_name} />
                                 <InputField label="Middle Name" name="middle_name" value={values?.middle_name} onChange={handleChange} error={errors.middle_name} />
                                 <InputField label="Last name" name="last_name" value={values?.last_name} onChange={handleChange} error={errors.last_name} />
-                                <InputField label="Academic Session" name="academic_session" value={values?.academic_session} onChange={handleChange} error={errors.academic_session} disabled />
+                                <InputField label="Academic Year" name="academic_year" value={values?.academic_year} onChange={handleChange} error={errors.academic_year} disabled />
                                 <SelectField label="Admission Class" name="admission_class" options={admissionClassoption} value={values?.admission_class} onChange={handleChange} error={errors.admission_class} />
                                 <SelectField label="Gender" name="gender" options={GenderOptions} value={values?.gender} onChange={handleChange} error={errors.gender} />
                                 <InputField label="Date of birth" name="dob" type="date" value={values?.dob} onChange={handleChange} error={errors.dob} />
@@ -94,9 +95,9 @@ const Register = () => {
                                 <div></div>
                                 <InputField label="Address line  1" name='address_1' value={values?.address_1} onChange={handleChange} error={errors.address_1} />
                                 <InputField label="Address line  2" name='address_2' value={values?.address_2} onChange={handleChange} error={errors.address_2} />
-                                <InputField label="country" name='country' value={values?.country} onChange={handleChange} error={errors.country} />
-                                <InputField label="state" name='state' value={values?.state} onChange={handleChange} error={errors.state} />
                                 <InputField label="city" name='city' value={values?.city} onChange={handleChange} error={errors.city} />
+                                <InputField label="state" name='state' value={values?.state} onChange={handleChange} error={errors.state} />
+                                <InputField label="country" name='country' value={values?.country} onChange={handleChange} error={errors.country} />
                                 <InputField label="Pin Code" name='pin_code' value={values?.pin_code} onChange={handleChange} error={errors.pin_code} />
                                 <div></div>
                                 <div></div>

@@ -8,7 +8,7 @@ const AcadamicDetails = () => {
                 <div></div>
                 <div></div>
                 <div></div>
-                <InputField label="Session" name={"session"} />
+                <InputField label="Academic year" name={"academic_year"} />
                 <InputField label="Class" name={"class"} />
                 <InputField label="Medium" name={"medium"} />
                 <InputField label="Second Language" name={"second_language"} />

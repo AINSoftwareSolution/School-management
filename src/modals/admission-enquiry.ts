@@ -7,7 +7,7 @@ const registerSchema = new Schema({
   first_name: { type: String, required: true },
   middle_name: { type: String, required: false },
   last_name: { type: String, required: true },
-  academic_session: { type: String, required: true },
+  academic_year: { type: String, required: true },
   admission_class: { type: String, required: true },
   gender: { type: String, required: true },
   dob: { type: String, required: true },
