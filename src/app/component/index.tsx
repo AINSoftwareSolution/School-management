@@ -4,6 +4,7 @@ import InputField from "./input";
 import SelectField from "./select";
 import TabPane from "./tabpane";
 import Tabs from "./tabs";
+import Upload from "./upload";
 
 
-export { Button, Container, InputField, SelectField, TabPane, Tabs }
+export { Button, Container, InputField, SelectField, TabPane, Tabs, Upload }

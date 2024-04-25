@@ -30,7 +30,7 @@ body {
 }
 
 
-label {
+form label {
 line-height: 0.25rem !important;
 }
 .banner{
