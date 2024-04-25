@@ -1,13 +1,12 @@
 export const admissionClassoption = [
-  { value: "nursary", label: "Nursary" },
+  { value: "nursery", label: "Nursery" },
   { value: "playGroup", label: "Play Group" },
   { value: "k1", label: "k1" },
   { value: "k2", label: "k2" },
-  { value: "1", label: "|" },
-  { value: "2", label: "||" },
-  { value: "3", label: "|||" },
-  { value: "4", label: "|V" },
-  { value: "5", label: "V" },
+  { value: "1", label: "Grade 1" },
+  { value: "2", label: "Grade 2" },
+  { value: "3", label: "Grade 3" },
+  { value: "4", label: "grade 4" },
 ];
 
 export const GenderOptions = [

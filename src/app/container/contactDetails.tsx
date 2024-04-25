@@ -15,7 +15,7 @@ const ContactDetails = () => {
                 <InputField label="Date of Birth" type="date" name={"father_dob"} />
                 <InputField label="Education" name={"father_education"} />
                 <InputField label="Occupation" name={"father-occupation"} />
-                <InputField label="Organisation" name={"father_organisation"} />
+                <InputField label="organization" name={"father_organization"} />
                 <InputField label="Designation" name={"father_designation"} />
                 <InputField label="Annual Income" type="number" name={"father_annual_income"} />
                 <InputField label="Primary Contact No." name={"father_primary_contact_no"} />
@@ -33,7 +33,7 @@ const ContactDetails = () => {
                 <InputField label="Date of Birth" type="date" name={"mother_dob"} />
                 <InputField label="Education" name={"mother_education"} />
                 <InputField label="Occupation" name={"father-occupation"} />
-                <InputField label="Organisation" name={"mother_organisation"} />
+                <InputField label="organization" name={"mother_organization"} />
                 <InputField label="Designation" name={"mother_designation"} />
                 <InputField label="Annual Income" type="number" name={"mother_annual_income"} />
                 <InputField label="Primary Contact No." name={"mother_primary_contact_no"} />
@@ -59,9 +59,9 @@ const ContactDetails = () => {
                 <div></div>
                 <InputField label="Address Line 1" name={"address1"} />
                 <InputField label="Address Line 2" name={"address2"} />
-                <InputField label="Country" name={"country"} />
-                <InputField label="State" name={"state"} />
                 <InputField label="City" name={"city"} />
+                <InputField label="State" name={"state"} />
+                <InputField label="Country" name={"country"} />
                 <InputField label="PIN code" name={"pin_code"} />
             </div>
         </form>

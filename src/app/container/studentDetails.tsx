@@ -17,13 +17,9 @@ const StudentDetails = () => {
                 <InputField label="Nationality" name="nationality" />
                 <SelectField label="Mother Tongue" name="mother_tongue" options={MotherTongueOptions} />
                 <InputField label="Place of birth" name="place_of_birth" />
-                <SelectField label="Religion" name="religion" options={Religionoptions} />
+                <InputField label="Religion" name="religion" />
                 <SelectField label="Category" name="category" options={CategoryOption} />
-                <SelectField label="Caste" name="caste" options={CasteOption} />
-                <InputField label="Sub Caste" name="sub_caste" />
                 <InputField label="Identification Marks" name="identification_marks" />
-                <InputField label="How did you get to know about our school" name="how_did_you_get_to_know_about_our_school" />
-                <SelectField label="Transport-Required" name="transport_required" options={YesNoOption} />
                 <br />
                 <h6 className="font-[600]">Medical Details</h6>
                 <div></div>
