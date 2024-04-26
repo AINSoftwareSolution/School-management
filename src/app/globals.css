@@ -18,31 +18,42 @@
 }
 
 body {
-  background-color: '#f4f4f4'
-
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  text-align: unset;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .auth {
   background-image: url('https://i.pinimg.com/originals/cd/19/c6/cd19c6995371fb9fe41c90a1eb4e7b56.jpg');
 }
-.login-image{
+
+.login-image {
   background-image: url('https://i.pinimg.com/originals/cd/19/c6/cd19c6995371fb9fe41c90a1eb4e7b56.jpg');
-        
+
 }
 
 
 form label {
-line-height: 0.25rem !important;
+  line-height: 0.25rem !important;
 }
-.banner{
+
+.banner {
   background-image: url('../app/utilis/Images/slider1.jpg');
 }
-.logo{
+
+.logo {
   -ms-layout-grid-mode: url('../app/utilis/logo/WISDOM\ WAVES\ -\ Logo\ Round.png');
 }
-.standardCurriculum{
+
+.standardCurriculum {
   background-image: url('../app/utilis//Images/standard.jpg');
 }
+
 .bg-white {
   background-color: #ffffff;
 }
@@ -67,7 +78,8 @@ line-height: 0.25rem !important;
 }
 
 .activity:hover {
-  border-color: #4a90e2; /* Change border color on hover */
+  border-color: #4a90e2;
+  /* Change border color on hover */
 }
 
 .activity h2 {
@@ -102,20 +114,3 @@ line-height: 0.25rem !important;
 .activity-description {
   text-align: left;
 }
-
-
-
-
-  
-
-
-  
-
-  
-   
-
-  
-        
-
-         
-

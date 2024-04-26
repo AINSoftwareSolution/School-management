@@ -1,9 +1,7 @@
 'use client'
-import React, { ReactNode, useState } from 'react';
+import React, {  useState } from 'react';
+import { TabsProps } from '../utilis/type';
 
-interface TabsProps {
-    children: ReactNode[];
-}
 
 const Tabs: React.FC<TabsProps> = ({ children }) => {
     const [activeTab, setActiveTab] = useState(0);
