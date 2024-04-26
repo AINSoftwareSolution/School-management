@@ -32,9 +32,7 @@ const Banner = () => {
           Learn More
         </button>
       </div>
-    </div>
-    
-
+    </div>   
     
   );
 };

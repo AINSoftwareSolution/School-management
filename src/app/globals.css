@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,6 +102,8 @@ line-height: 0.25rem !important;
 .activity-description {
   text-align: left;
 }
+
+
 
 
   
