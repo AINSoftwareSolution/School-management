@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Container, InputField} from "./component";
+import { Container, InputField } from "./component";
 import Image1 from "./utilis/Images/lunch-food-sandwich-milk-and-fruits.webp";
 import Image2 from "./utilis/Images/clock.jpg";
 import Image3 from "./utilis/Images/microscope.png";
@@ -13,10 +13,7 @@ import WelcomeImage from "./utilis/Images/a1.png";
 import { FaPaintBrush } from "react-icons/fa";
 import { FaMusic } from "react-icons/fa";
 
-import {
-  MdOutlineSportsSoccer,
-  MdSportsEsports,
-} from "react-icons/md";
+import { MdOutlineSportsSoccer, MdSportsEsports } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -33,8 +30,8 @@ export default function Home() {
                 Social Development
               </h1>
               <p className="text-black md:text-lg font-semibold mt-0">
-                We aim at success by creating skills necessary for kids to enrich &
-                empower in studies & sports.
+                We aim at success by creating skills necessary for kids to
+                enrich & empower in studies & sports.
               </p>
               <button
                 type="button"
@@ -57,7 +54,7 @@ export default function Home() {
               Welcome To Wisdom Waves School
             </h1>
             <h4 className="text-red-500 text-2xl font-bold">
-              {'World&apos;s'} Best Education at Wisdom Waves School
+              {"World&apos;s"} Best Education at Wisdom Waves School
             </h4>
             <hr className="w-16 border-t-2 border-blue-400"></hr>
             <p className="text-gray-600">
@@ -425,6 +422,80 @@ export default function Home() {
             </div>
           </Container>
         </div>
+      </div>
+
+      {/* Facilities */}
+      <div className="bg-white w-full">
+        <Container>
+          <div className="flex flex-col justify-start items-center py-8 ">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4 mt-12">Facilities</h1>
+              <div className="flex justify-center items-center">
+                <hr className="w-48 border-t-4 border-pink-600" />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
+              {/* Aircondition */}
+              <div className="activity bg-white rounded-lg text-center border p-4 hover:bg-blue-500 hover:text-black ">
+                <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  {/* icon */}
+                  {/*  <TbAirConditioning /> */}
+                </div>
+                <h2 className="text-2xl font-semibold mb-2 mt-0 text-black">
+                  Aircondition
+                </h2>
+                <p className="text-gray-500">Weather control.</p>
+              </div>
+
+              {/* Infrastructure */}
+              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4  hover:bg-blue-500  hover:text-black">
+                <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  {/*<FaHome /> */}
+                </div>
+                <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
+                  Infrastructure
+                </h2>
+                <p className="text-gray-500">Campus Area.</p>
+              </div>
+
+              {/* Transport */}
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4   hover:bg-blue-500  hover:text-black">
+                <div className="activity-icon bg-yellow-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  {/*    <MdEmojiTransportation className="text-white" />  */}
+                </div>
+                <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
+                  Transport
+                </h2>
+                <p className="text-gray-500">Vehicles.</p>
+              </div>
+
+              {/* Food & Stay */}
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4   hover:bg-blue-500  hover:text-black">
+                <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  {/*    <MdOutlineFoodBank />  */}
+                </div>
+                <h2 className="text-2xl text-black font-semibold ">
+                  {" "}
+                  Food & Stay{" "}
+                </h2>
+
+                <p className="text-gray-500">Lunch Snacks.</p>
+              </div>
+
+              {/* Networked */}
+              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4   hover:bg-blue-500  hover:text-black">
+                <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  {/* icon */}
+                  {/*    <TbNetwork />  */}
+                </div>
+                <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
+                  Networked
+                </h2>
+                <p className="text-gray-500">Communication.</p>
+              </div>
+            </div>
+          </div>
+        </Container>
       </div>
     </main>
   );
