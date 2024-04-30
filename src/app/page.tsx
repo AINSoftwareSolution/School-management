@@ -14,6 +14,21 @@ import { FaPaintBrush } from "react-icons/fa";
 import { FaMusic } from "react-icons/fa";
 
 import { MdOutlineSportsSoccer, MdSportsEsports } from "react-icons/md";
+import { TbAirConditioning } from "react-icons/tb";
+import { FaHome } from "react-icons/fa";
+import { MdEmojiTransportation } from "react-icons/md";
+import { MdNoFood } from "react-icons/md";
+import { TbNetwork } from "react-icons/tb";
+import { FaBookReader } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { FaSmileBeam } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
+
+
+
+
+
+
 
 export default function Home() {
   return (
@@ -45,97 +60,98 @@ export default function Home() {
       </div>
 
       {/* welcome section */}
-      <Container>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
-          {/* Left Column */}
+   
+  <Container>
+  <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+    {/* Left Column */}
+    <div className="space-y-8 px-8 xl:px-6 py-12">
+      <h1 className="text-blue-500 text-4xl font-bold">
+        Welcome To Wisdom Waves School
+      </h1>
+      <h4 className="text-red-500 text-2xl font-bold">
+        {"World's"} Best Education at Wisdom Waves School
+      </h4>
+      <hr className="w-16 border-t-2 border-blue-400"></hr>
+      <p className="text-gray-600">
+        Cum sociis natoque penatibus et ultrices volutpat. Nullam wisiss
+        ultricies a, gravida vitae, dapibus risus ante sodales lectus. Cum
+        sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a,
+        gravida vitae, dapibus risus ante sodales lectus.
+      </p>
 
-          <div className="space-y-8 px-8 xl:px-6 py-12">
-            <h1 className="text-blue-500 text-4xl font-bold">
-              Welcome To Wisdom Waves School
-            </h1>
-            <h4 className="text-red-500 text-2xl font-bold">
-              {"World&apos;s"} Best Education at Wisdom Waves School
-            </h4>
-            <hr className="w-16 border-t-2 border-blue-400"></hr>
-            <p className="text-gray-600">
-              Cum sociis natoque penatibus et ultrices volutpat. Nullam wisiss
-              ultricies a, gravida vitae, dapibus risus ante sodales lectus. Cum
-              sociis natoque penatibus et ultrices volutpat. Nullam wisi
-              ultricies a, gravida vitae, dapibus risus ante sodales lectus.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="tm-sc-icon-box icon-box text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper">
-                  <a className="icon icon-sm icon-dark icon-circled">
-                    <i className="pe-7s-scissors"></i>
-                  </a>
-                </div>
-                <h2 className="icon-box-title mb-0 text-lg font-bold">
-                  Active Learning
-                </h2>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-
-              {/* Repeat the same structure for other icon boxes */}
-              <div className="tm-sc-icon-box icon-box text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper">
-                  <a className="icon icon-sm icon-dark icon-circled">
-                    <i className="pe-7s-smile"></i>
-                  </a>
-                </div>
-                <h5 className="icon-box-title mb-0 text-lg font-bold">
-                  Fun and Happiness
-                </h5>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-
-              <div className="tm-sc-icon-box icon-box text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper">
-                  <a className="icon icon-sm icon-dark icon-circled">
-                    <i className="pe-7s-like2"></i>
-                  </a>
-                </div>
-                <h5 className="icon-box-title mb-0 text-lg font-bold">
-                  Fulfilled with Love
-                </h5>
-                <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-
-              <div className="tm-sc-icon-box icon-box text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper">
-                  <a className="icon icon-sm icon-dark icon-circled">
-                    <i className="pe-7s-users"></i>
-                  </a>
-                </div>
-                <h5 className="icon-box-title mb-0 text-lg font-bold">
-                  Expert Teachers
-                </h5>
-                <p className="text-gray-600 mb-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
+          <div className="icon-wrapper flex justify-center items-center mr-4">
+           {/* <FaBookReader style={{ color: "blue" }} /> */}
           </div>
-
-          {/* Right Column */}
-          <div className="flex items-center justify-center">
-            <div className="text-center">
-              <Image
-                src={WelcomeImage}
-                alt=" welcome-image"
-                className="w-full max-w-xs mx-auto"
-              />
-            </div>
+          <div className="flex flex-col justify-center">
+            <h2 className="icon-box-title text-2xl text-blue-700 font-bold">
+              Active Learning
+            </h2>
+            <p className="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
-      </Container>
+
+        {/* Repeat the same structure for other icon boxes */}
+        <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
+          <div className="icon-wrapper flex justify-center items-center mr-2">
+         {/*   <FaSmileBeam style={{ color: "green" }} /> */}
+          </div>
+          <div className="flex flex-col justify-center">
+            <h5 className="icon-box-title mb-0 text-2xl text-green-600 font-bold">
+             Fun and Happiness
+            </h5>
+            <p className="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+
+        <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
+          <div className="icon-wrapper flex justify-center items-center mr-4">
+          {/*  <FaHeart style={{ color: "red" }} /> */}
+          </div>
+          <div className="flex flex-col justify-center">
+            <h5 className="icon-box-title mb-0 text-2xl text-red-500 font-bold">
+              Fulfilled with Love
+            </h5>
+            <p className="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+
+        <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
+          <div className="icon-wrapper flex justify-center items-center mr-4">
+          {/*  <FaUserGraduate style={{ color: "purple" }} /> */}
+          </div>
+          <div className="flex flex-col justify-center">
+            <h5 className="icon-box-title mb-0 text-2xl text-purple-700 font-bold">
+              Expert Teachers
+            </h5>
+            <p className="text-gray-600 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column */}
+    <div className="flex items-center justify-center">
+      <div className="text-center">
+        <Image
+          src={WelcomeImage}
+          alt=" welcome-image"
+          className="w-full max-w-xs mx-auto"
+        />
+      </div>
+    </div>
+  </div>
+</Container>
+
 
       {/* Standard Curriculum */}
       <div className="bg-white w-full standardCurriculum">
@@ -205,91 +221,96 @@ export default function Home() {
       </div>
 
       {/* Activity Section */}
-      <div className="bg-white">
-        <div className="container mx-auto py-8">
-          <div className="text-center">
-            <h1 className="text-4xl text-red-500 font-bold mb-4 mt-8">
-              Our Activities
-            </h1>
-            <p>
-              There are many variations of passages. But the majority have
-              suffered alteration in some form, by injected humour, or
-              randomised words.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-            {/* Sport Activity */}
-            <div className="activity bg-white rounded-lg text-center border border-red-500 p-4">
-              <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                {/* icon */}
-                <MdOutlineSportsSoccer style={{ color: "white" }} />
-              </div>
-              <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
-                Sport
-              </h2>
-              <p className="text-black font-bold">
-                Engage in physical activities and sportsmanship.
-              </p>
-              <p className="text-black">
-                Participating in sports activities promotes physical fitness and
-                overall well-being among students. Sports teach the value of
-                collaboration and teamwork.
-              </p>
-            </div>
-            <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4">
-              <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                <FaMusic className="text-white" />
-              </div>
-              <h2 className="text-2xl text-blue-500 font-semibold mb-2 mt-0">
-                Music
-              </h2>
-              <p className="text-black font-bold">
-                Explore the world of music and rhythm.
-              </p>
-              <p className="text-black">
-                Music offers children a creative outlet for self-expression,
-                fosters cognitive development, and promotes social skills
-                through collaborative activities.
-              </p>
-            </div>
-
-            <div className="activity bg-white rounded-lg text-center border border-green-500 p-4">
-              <div className="activity-icon bg-yellow-400 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                <FaPaintBrush className="text-white" />
-              </div>
-              <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
-                Painting
-              </h2>
-              <p className="text-black font-bold">
-                Express yourself through colors and creativity.
-              </p>
-              <p className="text-gray-500">
-                Painting activities encourage children to unleash their
-                creativity and imagination, develop fine motor skills and
-                coordination, and engage in sensory exploration.
-              </p>
-            </div>
-
-            <div className="activity bg-white rounded-lg text-center border border-green-500 p-4">
-              <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                <MdSportsEsports />
-              </div>
-              <h2 className="text-2xl text-green-500 font-semibold mb-2 mt-0">
-                Playground
-              </h2>
-              <p className="text-black font-bold">
-                Enjoy recreational activities and outdoor fun.
-              </p>
-              <p className="text-gray-700">
-                Playground activities promote physical development, social
-                interaction, and imaginative play. Children engage in various
-                outdoor activities such as climbing.
-              </p>
-            </div>
-          </div>
+    <div className="bg-white">
+  <div className="container mx-auto py-8">
+    <div className="text-center">
+      <h1 className="text-4xl text-red-500 font-bold mb-4 mt-8">
+        Our Activities
+      </h1>
+      <p className="text-gray-600">
+        There are many variations of passages. But the majority have suffered
+        alteration in some form, by injected humour, or randomised words.
+      </p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+      {/* Sport Activity */}
+      <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 shadow-lg hover:shadow-xl hover:bg-blue-500 transition duration-300 ease-in-out">
+        <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+          <MdOutlineSportsSoccer />
         </div>
+        <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
+          Sport
+        </h2>
+        <p className="text-black font-semibold">
+          Engage in physical activities and sportsmanship.
+        </p>
+        <p className="text-gray-600">
+          Participating in sports activities promotes physical fitness and
+          overall well-being among students. Sports teach the value of
+          collaboration and teamwork.
+        </p>
+      </div>
 
-        {/* section-3 */}
+      {/* Music Activity */}
+      <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 shadow-lg hover:shadow-xl hover:bg-red-500 transition duration-300 ease-in-out">
+        <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+          <FaMusic />
+        </div>
+        <h2 className="text-2xl text-blue-500 font-semibold mb-2 mt-0">
+          Music
+        </h2>
+        <p className="text-black font-semibold">
+          Explore the world of music and rhythm.
+        </p>
+        <p className="text-gray-600">
+          Music offers children a creative outlet for self-expression, fosters
+          cognitive development, and promotes social skills through
+          collaborative activities.
+        </p>
+      </div>
+
+      {/* Painting Activity */}
+      <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-xl hover:bg-green-500 transition duration-300 ease-in-out">
+        <div className="activity-icon bg-yellow-400 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+          <FaPaintBrush />
+        </div>
+        <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
+          Painting
+        </h2>
+        <p className="text-black font-semibold">
+          Express yourself through colors and creativity.
+        </p>
+        <p className="text-gray-600">
+          Painting activities encourage children to unleash their creativity
+          and imagination, develop fine motor skills and coordination, and
+          engage in sensory exploration.
+        </p>
+      </div>
+
+      {/* Playground Activity */}
+      <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-xl hover:bg-purple-200 transition duration-300 ease-in-out">
+        <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+          <MdSportsEsports />
+        </div>
+        <h2 className="text-2xl text-green-500 font-semibold mb-2 mt-0">
+          Playground
+        </h2>
+        <p className="text-black font-semibold">
+          Enjoy recreational activities and outdoor fun.
+        </p>
+        <p className="text-gray-600">
+          Playground activities promote physical development, social
+          interaction, and imaginative play. Children engage in various outdoor
+          activities such as climbing.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+        {/* section-5 */}
         <div className="w-full h-auto bg-blue-500 py-16">
           <Container>
             <div className="grid grid-cols-2 items-center gap-16 ">
@@ -349,7 +370,7 @@ export default function Home() {
           </Container>
         </div>
 
-        {/* section-4 */}
+        {/* section-6 */}
 
         <div className="w-full h-auto bg-white py-16">
           <Container>
@@ -427,7 +448,7 @@ export default function Home() {
       {/* Facilities */}
       <div className="bg-white w-full">
         <Container>
-          <div className="flex flex-col justify-start items-center py-8 ">
+          <div className="flex flex-col justify-start items-center py-8">
             <div className="text-center">
               <h1 className="text-4xl font-bold mb-4 mt-12">Facilities</h1>
               <div className="flex justify-center items-center">
@@ -436,10 +457,9 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
               {/* Aircondition */}
-              <div className="activity bg-white rounded-lg text-center border p-4 hover:bg-blue-500 hover:text-black ">
+              <div className="activity bg-white rounded-lg text-center border p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400">
                 <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  {/* icon */}
-                  {/*  <TbAirConditioning /> */}
+                  <TbAirConditioning />
                 </div>
                 <h2 className="text-2xl font-semibold mb-2 mt-0 text-black">
                   Aircondition
@@ -448,9 +468,9 @@ export default function Home() {
               </div>
 
               {/* Infrastructure */}
-              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4  hover:bg-blue-500  hover:text-black">
+              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
                 <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  {/*<FaHome /> */}
+                  <FaHome />
                 </div>
                 <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
                   Infrastructure
@@ -459,9 +479,9 @@ export default function Home() {
               </div>
 
               {/* Transport */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4   hover:bg-blue-500  hover:text-black">
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
                 <div className="activity-icon bg-yellow-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  {/*    <MdEmojiTransportation className="text-white" />  */}
+                  <MdEmojiTransportation className="text-white" />
                 </div>
                 <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
                   Transport
@@ -470,9 +490,9 @@ export default function Home() {
               </div>
 
               {/* Food & Stay */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4   hover:bg-blue-500  hover:text-black">
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
                 <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  {/*    <MdOutlineFoodBank />  */}
+                  <MdNoFood />
                 </div>
                 <h2 className="text-2xl text-black font-semibold ">
                   {" "}
@@ -483,10 +503,9 @@ export default function Home() {
               </div>
 
               {/* Networked */}
-              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4   hover:bg-blue-500  hover:text-black">
+              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
                 <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  {/* icon */}
-                  {/*    <TbNetwork />  */}
+                  <TbNetwork />
                 </div>
                 <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
                   Networked
@@ -497,6 +516,7 @@ export default function Home() {
           </div>
         </Container>
       </div>
+     
     </main>
   );
 }
