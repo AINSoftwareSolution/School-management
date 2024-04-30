@@ -19,22 +19,21 @@ const Login = () => {
             alert(JSON.stringify(values, null, 2));
             try {
                 setLoading(true)
-                const res = await fetch("/api/admission/login", {
+                fetch("/api/admission/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
                     body: JSON.stringify(formik.values),
-                });
-
-                if (res.ok) {
+                }).then((res) => {
+                    return res.json()
+                }).then((data) => {
                     alert('user regsiter')
                     setLoading(false)
+                    localStorage.setItem('token', data?.token)
                     router.push('/admission-enquiry/details')
-                } else {
-                    console.log("User registration failed.");
-                    setLoading(false)
-                }
+                }).catch((error) => console.log(error))
+
             } catch (error) {
                 console.error("An error occurred during registration:", error);
             }

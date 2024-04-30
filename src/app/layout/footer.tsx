@@ -1,13 +1,15 @@
+"use client"
 import Logo from "../utilis/images/logo.png";
 import Image from "next/image";
-import { MdEmail } from "react-icons/md";
-import { MdAddIcCall } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaSquareYoutube } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
+import { MdEmail, MdAddIcCall } from "react-icons/md";
+import { FaFacebook, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+
 
 const Footer = () => {
+  const isPath = usePathname().startsWith('/admission-enquiry')
+  if (isPath) return <></>
+
   return (
     <div>
       <footer className="w-full bg-black px-4 py-4 gap-4">
@@ -20,7 +22,7 @@ const Footer = () => {
                     <Image src={Logo} alt="Logo" width={150} height={150} />
                   </div>
                   <div className="description text-gray-400 mb-4">
-                   Kondhwa Pune
+                    Kondhwa Pune
                   </div>
                   <ul className="mb-6">
                     <li className="contact-phone">
@@ -78,7 +80,7 @@ const Footer = () => {
               <div className="col-span-1">
                 <div className="widget ">
                   <h4 className="widget-title text-2xl text-white text-bold py-20 mb-8">
-                  {/*  Twitter Feed */}
+                    {/*  Twitter Feed */}
                   </h4>
                   <div
                     className="twitter-feed list-border clearfix"
@@ -103,19 +105,19 @@ const Footer = () => {
                   <li className="mr-2">
                     <a href="#" className="text-white hover:text-red-600">
                       <i className="fab fa-twitter text-4xl">
-                        <FaSquareXTwitter />
+                        <FaTwitterSquare />
                       </i>
                     </a>
                   </li>
                   <li className="mr-2">
                     <a href="#" className="text-white hover:text-red-600">
                       <i className="fab fa-youtube text-4xl">
-                        <FaSquareYoutube />
+                        <FaYoutubeSquare />
                       </i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/wisdom_waves_school/"  target="_blank" className="text-white hover:text-red-600">
+                    <a href="https://www.instagram.com/wisdom_waves_school/" target="_blank" className="text-white hover:text-red-600">
                       <i className="fab fa-instagram text-4xl">
                         <FaInstagramSquare />
                       </i>
@@ -150,7 +152,7 @@ const Footer = () => {
                       </li>
                       <li className="clearfix">
                         <div className="value">
-                          
+
                           <span> Sun : </span> Closed
                         </div>
                       </li>
@@ -161,7 +163,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-    
+
         <div className="footer-bottom bg-gray-900">
           <div className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 pt-6 pb-6">

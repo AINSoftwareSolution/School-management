@@ -13,6 +13,7 @@ export const POST = async (res: NextRequest) => {
     }
 
     const user = await Admission.findOne({ username });
+    console.log(user);
 
     if (!user) {
       return new Response("Username does not exist", { status: 400 });
@@ -28,13 +29,11 @@ export const POST = async (res: NextRequest) => {
       id: user._id,
     };
 
-    const token = jwt.sign(tokenData, 'naeemaproject', {
+    const token = jwt.sign(tokenData, "naeemaproject", {
       expiresIn: "1d",
     });
 
-    const response = NextResponse.json({ message: "Login successfull" });
-
-    response.cookies.set("token", token, { httpOnly: true });
+    const response = NextResponse.json({ message: "Login successfull" , token});
     return response;
   } catch (error) {
     console.log("Error", error);

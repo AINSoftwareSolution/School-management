@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation"
 const AdmissionLayout = ({ children, }: { children: React.ReactNode }) => {
     const router = useRouter()
     const handlelogout = () => {
+        localStorage.removeItem('token')
         router.push('/admission-enquiry/login')
     }
     return (

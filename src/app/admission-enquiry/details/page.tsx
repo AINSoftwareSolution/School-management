@@ -1,10 +1,18 @@
 'use client'
 import { AcadamicDetails, Confirmation, ContactDetails, DocumentUpload, StudentDetails } from "@/app/container";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Details: React.FC = () => {
     // State to track active tab
     const [activeTab, setActiveTab] = useState<number>(0);
+    const navigate = useRouter()
+
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        navigate.push('/admission-enquiry/login')
+    }
 
     // Function to handle next button click
     const handleNext = (): void => {
@@ -27,6 +35,7 @@ const Details: React.FC = () => {
         <DocumentUpload key={3} />,
         <Confirmation key={4} />,
     ];
+  
 
     return (
         <section className="bg-purple-50 min-h-screen">

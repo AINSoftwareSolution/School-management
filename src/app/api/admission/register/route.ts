@@ -10,6 +10,7 @@ export async function POST(request: Request) {
     await connectMongoDB();
 
     const password = Math.random().toString(36).slice(2).toUpperCase().slice(2);
+    console.log(password)
     const salt = await bcryptjs.genSalt(12);
     const hashedPassword = await bcryptjs.hash(password, salt);
     const newRes = new Admission({
