@@ -8,7 +8,6 @@ export function middleware(request: NextRequest) {
     path === "/admission-enquiry/register";
   const token = request.cookies.get("token")?.value || "";
 
-  console.log(isPublicPath, token);
 
   if (isPublicPath && token) {
     return NextResponse.redirect(new URL(`${path}`, request.nextUrl));
