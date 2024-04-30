@@ -31,7 +31,7 @@ export async function POST(request: Request) {
       from: "shaina.auer@ethereal.email", // Sender's email address
       to: res.primary_email_id, // Receiver's email address
       subject: "username and password", // Email subject
-      text: `username :'enq-mlhs-${res.first_name}' ,  password: ${password}`, // Email body text
+      text: `username :'enq-wws-${res.first_name}' ,  password: ${password}`, // Email body text
     };
 
     const sendmail = await transporter.sendMail(mailOptions);
