@@ -62,7 +62,7 @@ export default function Home() {
                   Welcome To Wisdom Waves School
                 </h1>
                 <h4 className="text-red-500 text-2xl font-bold mt-4">
-                  World's We recognise that quality education comes through:
+                  Worlds We recognise that quality education comes through:
                 </h4>
                 <hr className="w-16 border-t-2 border-blue-400"></hr>
                 <p className="text-gray-600 text-xl mb-6 mt-4">
