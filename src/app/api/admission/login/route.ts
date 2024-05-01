@@ -13,7 +13,6 @@ export const POST = async (res: NextRequest) => {
     }
 
     const user = await Admission.findOne({ username });
-    console.log(user);
 
     if (!user) {
       return new Response("Username does not exist", { status: 400 });
