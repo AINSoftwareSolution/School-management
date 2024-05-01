@@ -6,14 +6,7 @@ import { useState } from "react";
 const Details: React.FC = () => {
     // State to track active tab
     const [activeTab, setActiveTab] = useState<number>(0);
-    const navigate = useRouter()
-
-    const token = typeof window !== "undefined" && window?.localStorage.getItem("token");
-
-    if (!token) {
-        navigate.push('/admission-enquiry/login')
-    }
-
+   
     // Function to handle next button click
     const handleNext = (): void => {
         setActiveTab(prev => Math.min(prev + 1, formElements.length - 1));
