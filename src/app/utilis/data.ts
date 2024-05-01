@@ -75,3 +75,26 @@ export const Religionoptions = [
     { value: "tenrikyo", label: "Tenrikyo" },
     { value: "zoroastrianism", label: "Zoroastrianism" }
 ];
+
+
+export const registerIntialData = {
+  first_name: "",
+  middle_name: "",
+  last_name: "",
+  academic_year: "2024-2025",
+  admission_class: "",
+  gender: "",
+  dob: "",
+  about_school: "",
+  primary_contact_name: "",
+  primary_contact_relation: "",
+  primary_email_id: "",
+  primary_contact_number: "",
+  secondary_contact_number: "",
+  address_1: "",
+  address_2: "",
+  country: "",
+  state: "",
+  city: "",
+  pin_code: ""
+}

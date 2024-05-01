@@ -2,8 +2,9 @@ import mongoose, { Schema } from "mongoose";
 
 // Define the Mongoose schema
 const registerSchema = new Schema({
-  username: { type: String},
-  password: { type: String},
+  _id: mongoose.Schema.Types.ObjectId, // Unique identifier field
+  username: { type: String },
+  password: { type: String },
   first_name: { type: String, required: true },
   middle_name: { type: String, required: false },
   last_name: { type: String, required: true },

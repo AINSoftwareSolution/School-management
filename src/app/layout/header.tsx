@@ -7,20 +7,14 @@ import AdmissionButton from './admissionOpenButton';
 import { usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
-    const path = usePathname()
     const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
 
     const toggleCollapse = () => {
         setIsCollapsed(!isCollapsed);
     };
 
-    const isPath = path.startsWith('/admission-enquiry')
-
-    if (isPath) {
-        return (
-            <></>
-        )
-    }
+    const isPath = usePathname().startsWith('/admission-enquiry')
+    if (isPath) return <></>
 
 
     return (
