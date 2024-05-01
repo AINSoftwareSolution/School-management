@@ -166,12 +166,12 @@ const Footer = () => {
           <div className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 pt-6 pb-6">
               <div className="col-span-1">
-                <div className="footer-paragraph">
+                <div className="footer-paragraph text-gray-400">
                   © 2024 ThemeMascot. All Rights Reserved.
                 </div>
               </div>
               <div className="col-span-1">
-                <div className="footer-paragraph text-right">Site Template</div>
+                <div className="footer-paragraph text-right text-gray-400">Site Template</div>
               </div>
             </div>
           </div>

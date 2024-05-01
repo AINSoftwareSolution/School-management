@@ -9,12 +9,16 @@ import Square1 from "./utilis/Images/square-shape-img1.jpg";
 import Square2 from "./utilis/Images/square-shape-img2.jpg";
 import Square3 from "./utilis/Images/square-shape-img3.jpg";
 import Square4 from "./utilis/Images/square-shape-img4.jpg";
-import WelcomeImage from "./utilis/Images/a1.png";
+import WelcomeImage from "./utilis/Images/img_wel.webp";
 import { FaPaintBrush, FaMusic, FaHome } from "react-icons/fa";
 import Link from "next/link";
-import { MdOutlineSportsSoccer, MdSportsEsports,MdEmojiTransportation, MdNoFood } from "react-icons/md";
+import {
+  MdOutlineSportsSoccer,
+  MdSportsEsports,
+  MdEmojiTransportation,
+  MdNoFood,
+} from "react-icons/md";
 import { TbAirConditioning, TbNetwork } from "react-icons/tb";
-
 
 export default function Home() {
   return (
@@ -26,19 +30,21 @@ export default function Home() {
             <div className="relative bg-cover h-[98vh] max-w-screen-2xl mx-auto flex justify-end items-center">
               <div className="max-w-xl px-2 py-12 bg-none ">
                 <h1 className="text-[2.5rem] uppercase font-bold text-purple-700  leading-[3rem]	">
-                  Practical Teaching & <span className="text-red-500">  Social Development</span>
+                  Practical Teaching &{" "}
+                  <span className="text-red-500"> Social Development</span>
                 </h1>
 
                 <p className="text-black md:text-lg font-semibold my-8">
-                  We aim at success by creating skills necessary for kids to enrich &
-                  empower in studies & sports.
+                  We aim at success by creating skills necessary for kids to
+                  enrich & empower in studies & sports.
                 </p>
-                <Link href="#_"
+                <Link
+                  href="#_"
                   className="px-10 py-4 text-xl font-semibold text-center text-white transition duration-300 
-                rounded-lg hover:from-purple-700 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500 md:w-auto">
+                rounded-lg hover:from-purple-700 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500 md:w-auto"
+                >
                   Learn More
                 </Link>
-
               </div>
             </div>
           </Container>
@@ -48,158 +54,158 @@ export default function Home() {
       {/* welcome section */}
 
       <Container>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
-          {/* Left Column */}
-          <div className="space-y-8 px-8 xl:px-6 py-12">
-            <h1 className="text-blue-500 text-4xl font-bold">
-              Welcome To Wisdom Waves School
-            </h1>
-            <h4 className="text-red-500 text-2xl font-bold">
-              {"World's"} Best Education at Wisdom Waves School
-            </h4>
-            <hr className="w-16 border-t-2 border-blue-400"></hr>
-            <p className="text-gray-600">
-              Cum sociis natoque penatibus et ultrices volutpat. Nullam wisiss
-              ultricies a, gravida vitae, dapibus risus ante sodales lectus. Cum
-              sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a,
-              gravida vitae, dapibus risus ante sodales lectus.
-            </p>
+        <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="w-full md:w-2/3 mb-8 md:mb-0">
+              <div className="text-center md:text-left">
+                <h1 className="text-blue-500 text-4xl font-bold mb-4 mt-8">
+                  Welcome To Wisdom Waves School
+                </h1>
+                <h4 className="text-red-500 text-2xl font-bold mt-4">
+                  World's We recognise that quality education comes through:
+                </h4>
+                <hr className="w-16 border-t-2 border-blue-400"></hr>
+                <p className="text-gray-600 text-xl mb-6 mt-4">
+                  We believe that curriculum plays a vital role in every
+                  preschool activity, right from interactions and meals to
+                  singing and playing. We never miss an opportunity to educate.
+                  We have the best-in-class curriculum designed in-house using a
+                  combination of Playway and Montessori methods.
+                </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper flex justify-center items-center mr-4">
-                  {/* <FaBookReader style={{ color: "blue" }} /> */}
-                </div>
-                <div className="flex flex-col justify-center">
-                  <h2 className="icon-box-title text-2xl text-blue-700 font-bold">
-                    Active Learning
-                  </h2>
-                  <p className="text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                  <div className="tm-sc-icon-box icon-box flex justify-center sm:justify-start items-center text-center sm:text-left iconbox-theme-colored3">
+                    <div className="flex flex-col justify-center">
+                      <h2 className="icon-box-title text-2xl text-blue-700 font-bold">
+                        Active Learning
+                      </h2>
+                      <p className="text-gray-600 text-md mb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
 
-              {/* Repeat the same structure for other icon boxes */}
-              <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper flex justify-center items-center mr-2">
-                  {/*   <FaSmileBeam style={{ color: "green" }} /> */}
-                </div>
-                <div className="flex flex-col justify-center">
-                  <h5 className="icon-box-title mb-0 text-2xl text-green-600 font-bold">
-                    Fun and Happiness
-                  </h5>
-                  <p className="text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+                  {/*<!-- Repeat the same structure for other icon boxes --> */}
+                  <div className="tm-sc-icon-box icon-box flex justify-center sm:justify-start items-center text-center sm:text-left iconbox-theme-colored3">
+                    <div className="flex flex-col justify-center">
+                      <h2 className="icon-box-title text-2xl text-red-500 font-bold">
+                        Fun And Happiness
+                      </h2>
+                      <p className="text-gray-600 text-md mb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
 
-              <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper flex justify-center items-center mr-4">
-                  {/*  <FaHeart style={{ color: "red" }} /> */}
-                </div>
-                <div className="flex flex-col justify-center">
-                  <h5 className="icon-box-title mb-0 text-2xl text-red-500 font-bold">
-                    Fulfilled with Love
-                  </h5>
-                  <p className="text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
+                  <div className="tm-sc-icon-box icon-box flex justify-center sm:justify-start items-center text-center sm:text-left iconbox-theme-colored3">
+                    <div className="flex flex-col justify-center">
+                      <h2 className="icon-box-title text-2xl text-yellow-500 font-bold">
+                        Fullfilled With Love
+                      </h2>
+                      <p className="text-gray-600 text-md mb-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
 
-              <div className="tm-sc-icon-box icon-box flex text-center sm:text-left iconbox-theme-colored3">
-                <div className="icon-wrapper flex justify-center items-center mr-4">
-                  {/*  <FaUserGraduate style={{ color: "purple" }} /> */}
-                </div>
-                <div className="flex flex-col justify-center">
-                  <h5 className="icon-box-title mb-0 text-2xl text-purple-700 font-bold">
-                    Expert Teachers
-                  </h5>
-                  <p className="text-gray-600 mb-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div className="tm-sc-icon-box icon-box flex justify-center sm:justify-start items-center text-center sm:text-left iconbox-theme-colored3">
+                    <div className="flex flex-col justify-center">
+                      <h2 className="icon-box-title text-2xl text-pink-500 font-bold">
+                        Expert Teachers
+                      </h2>
+                      <p className="text-gray-600 text-md mb-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Right Column */}
-          <div className="flex items-center justify-center">
-            <div className="text-center">
-              <Image
-                src={WelcomeImage}
-                alt=" welcome-image"
-                className="w-full max-w-xs mx-auto"
-              />
+            {/*<!-- Right Column --> */}
+            <div className="w-full md:w-1/3">
+              <div className="text-center">
+                <Image
+                  src={WelcomeImage}
+                  alt="welcome-image"
+                  width={800}
+                  height={800}
+                />
+              </div>
             </div>
           </div>
         </div>
       </Container>
-
 
       {/* Standard Curriculum */}
       <div className="bg-white w-full standardCurriculum">
         <Container>
           <div className="flex flex-col justify-start items-center py-8 ">
             <div className="text-center">
-              <h1 className="text-4xl font-bold mb-8">Standard Curriculum</h1>
+              <h1 className="text-4xl font-bold text-red-500 mb-8">
+                Standard Curriculum
+              </h1>
               <div className="flex justify-center items-center">
-                <hr className="w-48 border-t-4 border-pink-600" />
+                <hr className="w-48 border-t-2 border-pink-600" />
               </div>
             </div>
 
-            <div className="grid  mt-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-b from-blue-100 to-white shadow-lg p-8 rounded-lg">
-                <Image
-                  src={Image1}
-                  alt=" Image 1"
-                  className="h-50 w-50 mx-auto mb-4 rounded-lg"
-                  width={100}
-                  height={100}
-                />
-                <div className="mb-4 font-bold text-center text-xl">
-                  Middle (10-16) Years
+            <div className="grid mt-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-b from-blue-100 rounded-lg hover:shadow-xl transition duration-300">
+                <div className="p-8">
+                  <Image
+                    src={Image1}
+                    alt="Image 1"
+                    className="mx-auto mb-4 rounded-md"
+                    width={250}
+                    height={250}
+                  />
+                  <div className="mb-4 font-bold text-center text-2xl">
+                    Middle (10-16) Years
+                  </div>
+                  <p className="text-gray-500">
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mu sdis parturient.
+                  </p>
                 </div>
-                <p className="text-gray-400">
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mu sdis parturient.
-                </p>
               </div>
 
-              <div className="bg-gradient-to-b from-yellow-100 to-white shadow-lg p-8 rounded-lg">
-                <Image
-                  src={Image2}
-                  alt="clock Image 2"
-                  className="h-50 w-50 mx-auto mb-4 rounded-lg"
-                  width={200}
-                  height={200}
-                />
-                <div className="mb-4 font-bold text-center text-xl">
-                  Elementary School
+              <div className="bg-gradient-to-b from-yellow-100 to-white shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+                <div className="p-8">
+                  <Image
+                    src={Image2}
+                    alt="clock Image 2"
+                    className="mx-auto mb-8 rounded-md"
+                    width={300}
+                    height={300}
+                  />
+                  <div className="mb-4 font-bold text-center text-2xl">
+                    Elementary School
+                  </div>
+                  <p className="text-gray-500">
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mu sdis parturient.
+                  </p>
                 </div>
-                <p className="text-gray-400">
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mu sdis parturient.
-                </p>
               </div>
 
-              <div className="bg-gradient-to-b from-purple-100 to-white shadow-lg p-8 rounded-lg">
-                <Image
-                  src={Image3}
-                  alt=" Image 3"
-                  className="h-50 w-50 mx-auto mb-4 rounded-lg"
-                  width={200}
-                  height={200}
-                />
-                <div className="mb-4 font-bold text-center text-xl">
-                  Kinder (3-6) Years
+              <div className="bg-gradient-to-b from-purple-100 to-white shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+                <div className="p-8">
+                  <Image
+                    src={Image3}
+                    alt="Image 3"
+                    className="mx-auto mb-4 rounded-md"
+                    width={300}
+                    height={300}
+                  />
+                  <div className="mb-4 font-bold text-center text-2xl">
+                    Kinder (3-6) Years
+                  </div>
+                  <p className="text-gray-500">
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mu sdis parturient.
+                  </p>
                 </div>
-                <p className="text-gray-400">
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mu sdis parturient.
-                </p>
               </div>
             </div>
           </div>
@@ -214,20 +220,21 @@ export default function Home() {
               Our Activities
             </h1>
             <p className="text-gray-600">
-              There are many variations of passages. But the majority have suffered
-              alteration in some form, by injected humour, or randomised words.
+              There are many variations of passages. But the majority have
+              suffered alteration in some form, by injected humour, or
+              randomised words.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {/* Sport Activity */}
-            <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 shadow-lg hover:shadow-xl hover:bg-blue-500 transition duration-300 ease-in-out">
+            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
               <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <MdOutlineSportsSoccer />
               </div>
               <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
                 Sport
               </h2>
-              <p className="text-black font-semibold">
+              <p className="text-black font-semibold mb-4">
                 Engage in physical activities and sportsmanship.
               </p>
               <p className="text-gray-600">
@@ -238,63 +245,60 @@ export default function Home() {
             </div>
 
             {/* Music Activity */}
-            <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 shadow-lg hover:shadow-xl hover:bg-red-500 transition duration-300 ease-in-out">
+            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
               <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <FaMusic />
               </div>
               <h2 className="text-2xl text-blue-500 font-semibold mb-2 mt-0">
                 Music
               </h2>
-              <p className="text-black font-semibold">
+              <p className="text-black font-semibold mb-4">
                 Explore the world of music and rhythm.
               </p>
               <p className="text-gray-600">
-                Music offers children a creative outlet for self-expression, fosters
-                cognitive development, and promotes social skills through
-                collaborative activities.
+                Music offers children a creative outlet for self-expression,
+                fosters cognitive development, and promotes social skills
+                through collaborative activities.
               </p>
             </div>
 
             {/* Painting Activity */}
-            <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-xl hover:bg-green-500 transition duration-300 ease-in-out">
+            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
               <div className="activity-icon bg-yellow-400 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <FaPaintBrush />
               </div>
               <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
                 Painting
               </h2>
-              <p className="text-black font-semibold">
+              <p className="text-black font-semibold mb-4">
                 Express yourself through colors and creativity.
               </p>
               <p className="text-gray-600">
-                Painting activities encourage children to unleash their creativity
-                and imagination, develop fine motor skills and coordination, and
-                engage in sensory exploration.
+                Painting activities encourage children to unleash their
+                creativity and imagination, develop fine motor skills and
+                coordination, and engage in sensory exploration.
               </p>
             </div>
 
             {/* Playground Activity */}
-            <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-xl hover:bg-purple-200 transition duration-300 ease-in-out">
+            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
               <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <MdSportsEsports />
               </div>
               <h2 className="text-2xl text-green-500 font-semibold mb-2 mt-0">
                 Playground
               </h2>
-              <p className="text-black font-semibold">
+              <p className="text-black font-semibold mb-4">
                 Enjoy recreational activities and outdoor fun.
               </p>
               <p className="text-gray-600">
                 Playground activities promote physical development, social
-                interaction, and imaginative play. Children engage in various outdoor
-                activities such as climbing.
+                interaction, and imaginative play. Children engage in various
+                outdoor activities such as climbing.
               </p>
             </div>
           </div>
         </div>
-
-
-
 
         {/* section-5 */}
         <div className="w-full h-auto bg-blue-500 py-16">
@@ -377,7 +381,7 @@ export default function Home() {
                       <Image
                         src={Square2}
                         alt=" Square-shape-img2"
-                        width={200}
+                        width={150}
                         height={200}
                       />
                     </div>
@@ -436,16 +440,18 @@ export default function Home() {
         <Container>
           <div className="flex flex-col justify-start items-center py-8">
             <div className="text-center">
-              <h1 className="text-4xl font-bold mb-4 mt-12">Facilities</h1>
+              <h1 className="text-4xl text-red-500 font-bold mb-4 mt-12">
+                Facilities
+              </h1>
               <div className="flex justify-center items-center">
                 <hr className="w-48 border-t-4 border-pink-600" />
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
               {/* Aircondition */}
-              <div className="activity bg-white rounded-lg text-center border p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400">
-                <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <TbAirConditioning />
+              <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400">
+                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  <TbAirConditioning style={{ color: "#FFD700" }} />
                 </div>
                 <h2 className="text-2xl font-semibold mb-2 mt-0 text-black">
                   Aircondition
@@ -454,9 +460,9 @@ export default function Home() {
               </div>
 
               {/* Infrastructure */}
-              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <FaHome />
+              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
+                <div className="activity-icon  text-red w-20 h-20 flex justify-center items-center mx-auto mb-4">
+                  <FaHome style={{ color: "#FFD700" }} />
                 </div>
                 <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
                   Infrastructure
@@ -465,20 +471,20 @@ export default function Home() {
               </div>
 
               {/* Transport */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon bg-yellow-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <MdEmojiTransportation className="text-white" />
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
+                <div className="activity-icon text-yellow text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  <MdEmojiTransportation style={{ color: "#FFD700" }} />
                 </div>
-                <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
+                <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
                   Transport
                 </h2>
                 <p className="text-gray-500">Vehicles.</p>
               </div>
 
               {/* Food & Stay */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <MdNoFood />
+              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
+                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  <MdNoFood style={{ color: "#FFD700" }} />
                 </div>
                 <h2 className="text-2xl text-black font-semibold ">
                   {" "}
@@ -489,9 +495,9 @@ export default function Home() {
               </div>
 
               {/* Networked */}
-              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <TbNetwork />
+              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
+                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+                  <TbNetwork style={{ color: "#FFD700" }} />
                 </div>
                 <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
                   Networked
@@ -502,7 +508,6 @@ export default function Home() {
           </div>
         </Container>
       </div>
-
     </main>
   );
 }
