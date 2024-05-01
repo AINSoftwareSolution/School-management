@@ -4,12 +4,24 @@ import Logo from '../utilis/images/logo.png'
 import Link from "next/link"
 import { AiOutlineLogout } from "react-icons/ai"
 import { useRouter } from "next/navigation"
+import { useEffect } from "react"
 
 const AdmissionLayout = ({ children, }: { children: React.ReactNode }) => {
     const router = useRouter()
+    const token = typeof window !== "undefined" && window?.localStorage.getItem('token') || ''
     const handlelogout = () => {
+        typeof window !== "undefined" && window?.localStorage.removeItem('token')
         router.push('/admission-enquiry/login')
     }
+
+    useEffect(() => {
+        if (token) {
+            router.push('/admission-enquiry/details')
+        } else {
+            router.push('/admission-enquiry/login')
+        }
+    }, [])
+
     return (
         <section>
             <div className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
@@ -19,11 +31,18 @@ const AdmissionLayout = ({ children, }: { children: React.ReactNode }) => {
                         <h4 className="font-[700] text-[1.5rem]">Wisdom Waves School</h4>
                         <address>Parge nagar, Kondhwa, Pune-48. <Link href={'tel:9511863508'}>+91 9511863508</Link></address>
                     </div>
-                    <button className="flex gap-2 font-[700] items-center" onClick={handlelogout}><AiOutlineLogout /> Logout</button>
+                    <div>
+                        {
+                            token &&
+                            <button className="flex gap-2 font-[700] items-center" onClick={handlelogout}>
+                                <AiOutlineLogout /> Logout
+                            </button>
+                        }
+                    </div>
                 </div>
             </div>
             {children}
-        </section>
+        </section >
     )
 }
 

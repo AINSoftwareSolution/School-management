@@ -1,11 +1,12 @@
 'use client'
 import { AcadamicDetails, Confirmation, ContactDetails, DocumentUpload, StudentDetails } from "@/app/container";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Details: React.FC = () => {
     // State to track active tab
     const [activeTab, setActiveTab] = useState<number>(0);
-
+   
     // Function to handle next button click
     const handleNext = (): void => {
         setActiveTab(prev => Math.min(prev + 1, formElements.length - 1));
@@ -27,6 +28,7 @@ const Details: React.FC = () => {
         <DocumentUpload key={3} />,
         <Confirmation key={4} />,
     ];
+
 
     return (
         <section className="bg-purple-50 min-h-screen">

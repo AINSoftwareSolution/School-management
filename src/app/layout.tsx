@@ -5,7 +5,7 @@ import Header from "./layout/header";
 import Footer from "./layout/footer";
 
 const inter = Roboto({
-  subsets: ["latin"],
+  subsets: ["cyrillic"],
   weight: "500"
 });
 

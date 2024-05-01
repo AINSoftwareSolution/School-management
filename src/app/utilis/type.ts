@@ -51,3 +51,8 @@ export interface UploadProps {
 export interface TabsProps {
   children: ReactNode[];
 }
+
+export interface Alertprops {
+  message: string;
+  mode: "success" | "danger";
+}
