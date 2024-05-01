@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
   const isPublicPath = publicPaths.includes(path);
 
   // Get token from local storage
-  const token = localStorage.getItem("token") || "";
+  const token = window?.localStorage.getItem("token") || "";
 
   if (isPublicPath && token) {
     // Redirect to the path without token if trying to access a public path with a token

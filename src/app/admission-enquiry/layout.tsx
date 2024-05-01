@@ -8,9 +8,9 @@ import { useEffect } from "react"
 
 const AdmissionLayout = ({ children, }: { children: React.ReactNode }) => {
     const router = useRouter()
-    const token = localStorage.getItem('token') || ''
+    const token = window?.localStorage.getItem('token') || ''
     const handlelogout = () => {
-        localStorage.removeItem('token')
+        window?.localStorage.removeItem('token')
         router.push('/admission-enquiry/login')
     }
 

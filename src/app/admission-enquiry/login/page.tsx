@@ -40,7 +40,7 @@ const Login = () => {
                 }).then((data) => {
                     showAlert({ message: "Please check your mail for username and password", mode: "success" })
                     setLoading(false)
-                    localStorage.setItem('token', data?.token)
+                    window?.localStorage.setItem('token', data?.token)
                     router.push('/admission-enquiry/details')
                 }).catch((error) => {
                     showAlert({ message: "Something went wrong please try again!", mode: "danger" })

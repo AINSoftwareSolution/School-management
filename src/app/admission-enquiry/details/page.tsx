@@ -8,7 +8,7 @@ const Details: React.FC = () => {
     const [activeTab, setActiveTab] = useState<number>(0);
     const navigate = useRouter()
 
-    const token = localStorage.getItem("token");
+    const token = window?.localStorage.getItem("token");
 
     if (!token) {
         navigate.push('/admission-enquiry/login')
