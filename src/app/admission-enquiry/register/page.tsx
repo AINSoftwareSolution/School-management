@@ -17,7 +17,7 @@ const Register = () => {
     const showAlert = ({ mode, message }: Alertprops) => {
         setAlert({ mode, message });
         setTimeout(() => {
-            if(mode == 'success'){
+            if (mode == 'success') {
                 router.push('/admission-enquiry/login')
             }
             setAlert({ message: '', mode: 'danger' });
@@ -28,7 +28,6 @@ const Register = () => {
         initialValues: registerIntialData,
         validationSchema: admissionRegistervalidationSchema,
         onSubmit: async values => {
-            alert(JSON.stringify(values, null, 2));
             try {
                 setLoading(true)
                 fetch("/api/admission/register", {
@@ -36,17 +35,21 @@ const Register = () => {
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(formik.values),
+                    body: JSON.stringify(values),
                 }).then((res) => {
+                    console.log(res)
                     if (res.ok) {
-                        showAlert({ mode: 'success', message: 'Success' })
+                        showAlert({ mode: 'success', message: 'Please check your email for usename and password' })
                         setLoading(false)
                     }
-                }).catch((error) =>
+                }).catch((error) => {
                     showAlert({ mode: 'danger', message: 'Something went wrong try again!' })
-                )
+                    setLoading(false)
+                })
             } catch (error) {
                 console.error("An error occurred during registration:", error);
+                setLoading(false)
+
             }
         },
     });
