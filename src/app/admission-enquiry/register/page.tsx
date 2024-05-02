@@ -17,6 +17,9 @@ const Register = () => {
     const showAlert = ({ mode, message }: Alertprops) => {
         setAlert({ mode, message });
         setTimeout(() => {
+            if(mode == 'success'){
+                router.push('/admission-enquiry/login')
+            }
             setAlert({ message: '', mode: 'danger' });
         }, 5000); // Hide the alert after 5 seconds
     };
@@ -35,9 +38,10 @@ const Register = () => {
                     },
                     body: JSON.stringify(formik.values),
                 }).then((res) => {
-                    showAlert({ mode: 'success', message: 'Success' })
-                    setLoading(false)
-                    router.push('/admission-enquiry/login')
+                    if (res.ok) {
+                        showAlert({ mode: 'success', message: 'Success' })
+                        setLoading(false)
+                    }
                 }).catch((error) =>
                     showAlert({ mode: 'danger', message: 'Something went wrong try again!' })
                 )
