@@ -4,9 +4,8 @@ import { admissionRegistervalidationSchema } from "@/app/utilis/schema";
 import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import { GenderOptions, admissionClassoption, registerIntialData } from "@/app/utilis/data";
-import { InputField, SelectField } from "@/app/component";
+import { InputField, SelectField,Alert } from "@/app/component";
 import { useState } from "react";
-import Alert from "@/app/component/alert";
 import { Alertprops } from "@/app/utilis/type";
 
 const Register = () => {
