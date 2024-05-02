@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Container, InputField } from "./component";
-import Image1 from "./utilis/Images/lunch-food-sandwich-milk-and-fruits.webp";
-import Image2 from "./utilis/Images/clock.jpg";
+import Image1 from "./utilis/Images/carousel-1.jpg";
+import Image2 from "./utilis/Images/carousel-2.jpg";
 import Image3 from "./utilis/Images/microscope.png";
 import Image4 from "./utilis/Images/classworks.webp";
 import Square1 from "./utilis/Images/square-shape-img1.jpg";
@@ -10,44 +10,63 @@ import Square2 from "./utilis/Images/square-shape-img2.jpg";
 import Square3 from "./utilis/Images/square-shape-img3.jpg";
 import Square4 from "./utilis/Images/square-shape-img4.jpg";
 import WelcomeImage from "./utilis/Images/img_wel.webp";
+import { FaBus } from "react-icons/fa";
+
 import { FaPaintBrush, FaMusic } from "react-icons/fa";
 import Link from "next/link";
 import {
   MdOutlineSportsSoccer,
   MdSportsEsports,
   MdEmojiTransportation,
-  MdNoFood, MdOutlineEmojiNature,
+  MdNoFood,
+  MdOutlineEmojiNature,
 } from "react-icons/md";
 import { TbAirConditioning, TbNetwork } from "react-icons/tb";
+import { url } from "inspector";
 
 export default function Home() {
   return (
     <main>
       {/* banner */}
-      <div className="w-full h-full bg-banner-bg  flex items-center">
-        <div className="w-full bg-black opacity-80 text-white banner bg-center ">
-          <Container>
-            <div className="relative bg-cover h-[98vh] max-w-screen-2xl mx-auto flex justify-end items-center">
-              <div className="max-w-xl px-2 py-12 bg-none ">
-                <h1 className="text-[2.5rem] uppercase font-bold text-purple-700  leading-[3rem]	">
-                  Practical Teaching &{" "}
-                  <span className="text-red-500"> Social Development</span>
-                </h1>
-
-                <p className="text-black md:text-lg font-semibold my-8">
-                  We aim at success by creating skills necessary for kids to
-                  enrich & empower in studies & sports.
-                </p>
-                <Link
-                  href="#_"
-                  className="px-10 py-4 text-xl font-semibold text-center text-white transition duration-300 
-                rounded-lg hover:from-purple-700 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500 md:w-auto"
+      <div className="container-fluid p-0 mb-5">
+        <div className="owl-carousel header-carousel relative">
+          {/* Use Next.js Image component */}
+          <Image
+            src={Image1}
+            alt="Banner Image"
+            layout="fill"
+            objectFit="cover"
+            className="absolute top-0 left-0 w-full h-screen"
+          />
+          <div className="container">
+            <div className="row justify-start">
+              <div className="col-10 lg:col-8">
+                {/* Ensure that the h1 and p elements have a higher z-index to ensure visibility */}
+                <div className="relative z-10">
+                  <h1 className="text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 animated slideInDown">
+                    The Best Kindergarten School For Your Child
+                  </h1>
+                  <p className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4 pb-2">
+                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
+                    diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
+                    sea elitr.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  className="btn btn-primary rounded-full py-3 px-5 md:py-4 md:px-6 me-3 animated slideInLeft"
                 >
                   Learn More
-                </Link>
+                </a>
+                <a
+                  href="#"
+                  className="btn btn-dark rounded-full py-3 px-5 md:py-4 md:px-6 animated slideInRight"
+                >
+                  Our Classes
+                </a>
               </div>
             </div>
-          </Container>
+          </div>
         </div>
       </div>
 
@@ -69,8 +88,8 @@ export default function Home() {
                   We believe that curriculum plays a vital role in every
                   preschool activity, right from interactions and meals to
                   singing and playing. We never miss an opportunity to educate.
-                  We have the best-in-class curriculum designed in-house using a
-                  combination of Playway and Montessori methods.
+                  We have the best-in-className curriculum designed in-house
+                  using a combination of Playway and Montessori methods.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -435,39 +454,200 @@ export default function Home() {
       </div>
 
       {/* Facilities */}
-      <div className="bg-white w-full">
-        <Container>
-          <div className="flex flex-col justify-start items-center py-8">
-            <div className="text-center">
-              <h1 className="text-4xl text-red-500 font-bold mb-4 mt-12">
-                Facilities
-              </h1>
-              <div className="flex justify-center items-center">
-                <hr className="w-48 border-t-4 border-pink-600" />
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div
+            className="text-center mx-auto mb-5 animate__fadeInUp"
+            style={{ maxWidth: "600px" }}
+          >
+            <h1 className="text-4xl text-black text-bold mb-4">
+              School Facilities
+            </h1>
+            <p className="text-xl text-gray-700 mb-12">
+              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+              rebum vero dolor duo.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+            <div
+              className="wow animate__fadeInUp"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
+                  <span className="bg-primary rounded-full"></span>
+
+                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <span className="bg-primary rounded-full"></span>
+                </div>
+                <div className="bg-purple-300 p-4 rounded-full text-center">
+                  <h3 className="text-red-400 mb-3">School Bus</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
-              {/* Aircondition */}
-              {
-                [{ title: 'Aircondition', description: 'Weather control.', icon: <TbAirConditioning style={{ color: "#FFD700", fontSize: '3rem' }} /> },
-                { title: 'Infrastructure', description: 'Campus Area.', icon: <MdOutlineEmojiNature style={{ color: "#FFD700", fontSize: '3rem' }} /> },
-                { title: 'Transport', description: 'Vehicles.', icon: <MdEmojiTransportation style={{ color: "#FFD700", fontSize: '3rem' }} /> },
-                { title: 'Food & Stay', description: 'Lunch Snacks.', icon: <MdNoFood style={{ color: "#FFD700", fontSize: '3rem' }} /> },
-                { title: 'Networked', description: 'Communication.', icon: <TbNetwork style={{ color: "#FFD700", fontSize: '3rem' }} /> },].map((facility, index) => (
-                  <div key={index} className="bg-white rounded-lg text-center border border-purple-500 p-6 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-purple-200">
-                    <div className=" text-white rounded-full flex justify-center items-center mx-auto mb-2">
-                      {facility.icon}
-                    </div>
-                    <h2 className="text-2xl font-semibold my-2 mt-0 text-black">
-                      {facility.title}
-                    </h2>
-                    <p className="text-gray-500">{facility.description}</p>
-                  </div>
-                ))
-              }
+            {/* Repeat the above structure for other facilities */}
+            <div
+              className="wow animate__fadeInUp"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
+                  <span className="bg-primary rounded-full"></span>
+
+                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <span className="bg-primary rounded-full"></span>
+                </div>
+                <div className="bg-purple-300 p-4 rounded-full text-center">
+                  <h3 className="text-primary mb-3">Playground</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="wow animate__fadeInUp"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
+                  <span className="bg-primary rounded-full"></span>
+
+                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <span className="bg-primary rounded-full"></span>
+                </div>
+                <div className="bg-purple-300 p-4 rounded-full text-center">
+                  <h3 className="text-primary mb-3">Healthy Canteen</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="wow animate__fadeInUp"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
+                  <span className="bg-primary rounded-full"></span>
+
+                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <span className="bg-primary rounded-full"></span>
+                </div>
+                <div className="bg-purple-300 p-4 rounded-full text-center">
+                  <h3 className="text-primary mb-3">Positive Learning</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </Container>
+        </div>
+      </div>
+
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div
+            className="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            // style="max-width: 600px;"
+          >
+            <h1 className="mb-3">School Facilities</h1>
+            <p>
+              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+              rebum vero dolor duo.
+            </p>
+          </div>
+          <div className="row g-4">
+            <div
+              className="col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div className="facility-item">
+                <div className="facility-icon bg-primary">
+                  <span className="bg-primary"></span>
+                  <i className="fa fa-bus-alt fa-3x text-primary"></i>
+                  <span className="bg-primary"></span>
+                </div>
+                <div className="facility-text bg-primary">
+                  <h3 className="text-primary mb-3">School Bus</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div className="facility-item">
+                <div className="facility-icon bg-success">
+                  <span className="bg-success"></span>
+                  <i className="fa fa-futbol fa-3x text-success"></i>
+                  <span className="bg-success"></span>
+                </div>
+                <div className="facility-text bg-success">
+                  <h3 className="text-success mb-3">Playground</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div className="facility-item">
+                <div className="facility-icon bg-warning">
+                  <span className="bg-warning"></span>
+                  <i className="fa fa-home fa-3x text-warning"></i>
+                  <span className="bg-warning"></span>
+                </div>
+                <div className="facility-text bg-warning">
+                  <h3 className="text-warning mb-3">Healthy Canteen</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-sm-6 wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div className="facility-item">
+                <div className="facility-icon bg-info">
+                  <span className="bg-info"></span>
+                  <i className="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                  <span className="bg-info"></span>
+                </div>
+                <div className="facility-text bg-info">
+                  <h3 className="text-info mb-3">Positive Learning</h3>
+                  <p className="mb-0">
+                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
+                    ipsum sit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
