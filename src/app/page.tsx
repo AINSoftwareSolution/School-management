@@ -10,13 +10,13 @@ import Square2 from "./utilis/Images/square-shape-img2.jpg";
 import Square3 from "./utilis/Images/square-shape-img3.jpg";
 import Square4 from "./utilis/Images/square-shape-img4.jpg";
 import WelcomeImage from "./utilis/Images/img_wel.webp";
-import { FaPaintBrush, FaMusic, FaHome } from "react-icons/fa";
+import { FaPaintBrush, FaMusic } from "react-icons/fa";
 import Link from "next/link";
 import {
   MdOutlineSportsSoccer,
   MdSportsEsports,
   MdEmojiTransportation,
-  MdNoFood,
+  MdNoFood, MdOutlineEmojiNature,
 } from "react-icons/md";
 import { TbAirConditioning, TbNetwork } from "react-icons/tb";
 
@@ -62,7 +62,7 @@ export default function Home() {
                   Welcome To Wisdom Waves School
                 </h1>
                 <h4 className="text-red-500 text-2xl font-bold mt-4">
-                  World's We recognise that quality education comes through:
+                  Worlds We recognise that quality education comes through:
                 </h4>
                 <hr className="w-16 border-t-2 border-blue-400"></hr>
                 <p className="text-gray-600 text-xl mb-6 mt-4">
@@ -85,7 +85,6 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/*<!-- Repeat the same structure for other icon boxes --> */}
                   <div className="tm-sc-icon-box icon-box flex justify-center sm:justify-start items-center text-center sm:text-left iconbox-theme-colored3">
                     <div className="flex flex-col justify-center">
                       <h2 className="icon-box-title text-2xl text-red-500 font-bold">
@@ -227,8 +226,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {/* Sport Activity */}
-            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
-              <div className="activity-icon bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+            <div className="bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
+              <div className=" bg-red-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <MdOutlineSportsSoccer />
               </div>
               <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
@@ -245,8 +244,8 @@ export default function Home() {
             </div>
 
             {/* Music Activity */}
-            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
-              <div className="activity-icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+            <div className="bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
+              <div className="icon bg-blue-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <FaMusic />
               </div>
               <h2 className="text-2xl text-blue-500 font-semibold mb-2 mt-0">
@@ -263,8 +262,8 @@ export default function Home() {
             </div>
 
             {/* Painting Activity */}
-            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
-              <div className="activity-icon bg-yellow-400 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+            <div className="bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
+              <div className="icon bg-yellow-400 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <FaPaintBrush />
               </div>
               <h2 className="text-2xl text-yellow-400 font-semibold mb-2 mt-0">
@@ -281,8 +280,8 @@ export default function Home() {
             </div>
 
             {/* Playground Activity */}
-            <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
-              <div className="activity-icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
+            <div className="bg-white rounded-lg text-center border p-4 shadow-lg  hover:bg-purple-100 transition duration-300 ease-in-out">
+              <div className="icon bg-green-500 text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
                 <MdSportsEsports />
               </div>
               <h2 className="text-2xl text-green-500 font-semibold mb-2 mt-0">
@@ -449,61 +448,23 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
               {/* Aircondition */}
-              <div className="activity bg-white rounded-lg text-center border p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400">
-                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <TbAirConditioning style={{ color: "#FFD700" }} />
-                </div>
-                <h2 className="text-2xl font-semibold mb-2 mt-0 text-black">
-                  Aircondition
-                </h2>
-                <p className="text-gray-500">Weather control.</p>
-              </div>
-
-              {/* Infrastructure */}
-              <div className="activity bg-white rounded-lg text-center border border-blue-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon  text-red w-20 h-20 flex justify-center items-center mx-auto mb-4">
-                  <FaHome style={{ color: "#FFD700" }} />
-                </div>
-                <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
-                  Infrastructure
-                </h2>
-                <p className="text-gray-500">Campus Area.</p>
-              </div>
-
-              {/* Transport */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon text-yellow text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <MdEmojiTransportation style={{ color: "#FFD700" }} />
-                </div>
-                <h2 className="text-2xl text-black font-semibold mb-2 mt-0">
-                  Transport
-                </h2>
-                <p className="text-gray-500">Vehicles.</p>
-              </div>
-
-              {/* Food & Stay */}
-              <div className="activity bg-white rounded-lg text-center border border-green-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <MdNoFood style={{ color: "#FFD700" }} />
-                </div>
-                <h2 className="text-2xl text-black font-semibold ">
-                  {" "}
-                  Food & Stay{" "}
-                </h2>
-
-                <p className="text-gray-500">Lunch Snacks.</p>
-              </div>
-
-              {/* Networked */}
-              <div className="activity bg-white rounded-lg text-center border border-red-500 p-4 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-blue-400 hover:text-black">
-                <div className="activity-icon text-white w-20 h-20 rounded-full flex justify-center items-center mx-auto mb-4">
-                  <TbNetwork style={{ color: "#FFD700" }} />
-                </div>
-                <h2 className="text-2xl text-red-500 font-semibold mb-2 mt-0">
-                  Networked
-                </h2>
-                <p className="text-gray-500">Communication.</p>
-              </div>
+              {
+                [{ title: 'Aircondition', description: 'Weather control.', icon: <TbAirConditioning style={{ color: "#FFD700", fontSize: '3rem' }} /> },
+                { title: 'Infrastructure', description: 'Campus Area.', icon: <MdOutlineEmojiNature style={{ color: "#FFD700", fontSize: '3rem' }} /> },
+                { title: 'Transport', description: 'Vehicles.', icon: <MdEmojiTransportation style={{ color: "#FFD700", fontSize: '3rem' }} /> },
+                { title: 'Food & Stay', description: 'Lunch Snacks.', icon: <MdNoFood style={{ color: "#FFD700", fontSize: '3rem' }} /> },
+                { title: 'Networked', description: 'Communication.', icon: <TbNetwork style={{ color: "#FFD700", fontSize: '3rem' }} /> },].map((facility, index) => (
+                  <div key={index} className="bg-white rounded-lg text-center border border-purple-500 p-6 shadow-lg hover:shadow-lg transition duration-300 ease-in-out hover:bg-purple-200">
+                    <div className=" text-white rounded-full flex justify-center items-center mx-auto mb-2">
+                      {facility.icon}
+                    </div>
+                    <h2 className="text-2xl font-semibold my-2 mt-0 text-black">
+                      {facility.title}
+                    </h2>
+                    <p className="text-gray-500">{facility.description}</p>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </Container>
