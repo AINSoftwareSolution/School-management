@@ -157,8 +157,8 @@ export default function Home() {
                     src={Image1}
                     alt="Image 1"
                     className="mx-auto mb-4 rounded-md"
-                    width={250}
-                    height={250}
+                    width={200}
+                    height={200}
                   />
                   <div className="mb-4 font-bold text-center text-2xl">
                     Middle (10-16) Years
@@ -176,8 +176,8 @@ export default function Home() {
                     src={Image2}
                     alt="clock Image 2"
                     className="mx-auto mb-8 rounded-md"
-                    width={300}
-                    height={300}
+                    width={200}
+                    height={200}
                   />
                   <div className="mb-4 font-bold text-center text-2xl">
                     Elementary School
@@ -195,8 +195,8 @@ export default function Home() {
                     src={Image3}
                     alt="Image 3"
                     className="mx-auto mb-4 rounded-md"
-                    width={300}
-                    height={300}
+                    width={200}
+                    height={200}
                   />
                   <div className="mb-4 font-bold text-center text-2xl">
                     Kinder (3-6) Years
