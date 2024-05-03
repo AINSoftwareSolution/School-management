@@ -71,15 +71,15 @@ form label {
   height: 10px;
   top: 0;
   left: 0;
-  background: url(./utilis/images/border.png) center center repeat-x;
+  background: url('./utilis/images/border.png') center center repeat-x;
   z-index: 1;
 }
 
 
 
-.standardCurriculum {
+/* .standardCurriculum {
   background-image: url('../app/utilis//Images/standard.jpg');
-}
+} */
 
 
 .section-title {
