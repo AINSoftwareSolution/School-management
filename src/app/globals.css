@@ -38,32 +38,49 @@ body {
 
 }
 
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+  font-family: 'Lobster Two', cursive;
+  font-weight: 700;
+}
+
 
 form label {
   line-height: 0.25rem !important;
 }
 
 .banner {
-  background-image: url('../app/utilis/Images/slider1.jpg');
+  position: relative;
+  background-image: url('./utilis/images/carousel-1.jpg');
 }
 
-.logo {
-  -ms-layout-grid-mode: url('../app/utilis/logo/WISDOM\ WAVES\ -\ Logo\ Round.png');
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 17%), rgba(0, 0, 0, 0.7)); 
+   z-index: 1;
 }
 
-.standardCurriculum {
+.border::before, .banner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 10px;
+  top: 0;
+  left: 0;
+  background: url('./utilis/images/border.png') center center repeat-x;
+  z-index: 1;
+}
+
+
+
+/* .standardCurriculum {
   background-image: url('../app/utilis//Images/standard.jpg');
-}
+} */
 
-.bg-white {
-  background-color: #ffffff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .section-title {
   text-align: center;

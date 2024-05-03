@@ -28,9 +28,7 @@ export const POST = async (res: NextRequest) => {
       id: user._id,
     };
 
-    const token = jwt.sign(tokenData, "naeemaproject", {
-      expiresIn: "1d",
-    });
+    const token = jwt.sign(tokenData, "naeemaproject");
 
     const response = NextResponse.json({ message: "Login successfull" , token});
     return response;
@@ -39,3 +37,4 @@ export const POST = async (res: NextRequest) => {
     return new Response("Something went wrong ", { status: 500 });
   }
 };
+

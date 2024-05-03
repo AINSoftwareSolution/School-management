@@ -28,51 +28,27 @@ import {
   MdOutlineEmojiNature,
 } from "react-icons/md";
 import { TbAirConditioning, TbNetwork } from "react-icons/tb";
-import { url } from "inspector";
 
 export default function Home() {
   return (
     <main>
       {/* banner */}
-      <div className="container-fluid p-0 mb-5">
-  <div className="w-full h-screen owl-carousel header-carousel relative">
-    {/* Use Next.js Image component */}
-    <Image
-      src={Image1}
-      alt="Banner Image"
-      layout="fill"
-      objectFit="cover"
-      className="absolute top-0 left-0 w-full h-screen"
-    />
-    <div className="container h-full">
-      <div className="flex  text-white p-4 ">
+      <div className="bg-cover bg-top bg-fixed h-[90vh] flex items-center banner border" >
         {/* Ensure that the h1 and p elements have a higher z-index to ensure visibility */}
-        <div className="relative">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 animated slideInDown">
-            The Best Kindergarten School For Your Child
-          </h1>
-          <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 ml-2 pb-2">
-            Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no.
-            Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
-          </p>
-        </div>
-        <button
-          className="btn btn-primary rounded-full py-3 px-5 md:py-4 md:px-6 me-3 animated slideInLeft"
-          onClick={() => { /* Add your onClick handler here */ }}
-        >
-          Learn More
-        </button>
-        <a
-          href="#"
-          className="btn btn-dark rounded-full py-3 px-5 md:py-4 md:px-6 animated slideInRight"
-        >
-          Our Classes
-        </a>
+        <Container>
+          <div className="flex justify-start ">
+            <div className="w-10/12 lg:w-8/12 z-10">
+              <h1 className="text-4xl lg:text-6xl text-white mb-6 leading-7	">Make A Brighter Future For Your Child</h1>
+              <p className="text-lg lg:text-xl font-medium text-white mb-6 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+              <Link href="" className="bg-[#cba347] text-white rounded-full py-2 sm:py-4 px-4 sm:px-9 me-3">Our Classes
+              </Link>
+              <Link href="" className="bg-purple-800 text-white rounded-full py-2 sm:py-4 px-4 sm:px-9 ">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </Container>
       </div>
-    </div>
-  </div>
-</div>
-
 
       {/* welcome section */}
 
