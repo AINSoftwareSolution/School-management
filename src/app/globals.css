@@ -43,17 +43,20 @@ form label {
   line-height: 0.25rem !important;
 }
 
-.banner {
+/* .banner {
   background-image: url('../app/utilis/Images/slider1.jpg');
 }
+*/
 
-.logo {
-  -ms-layout-grid-mode: url('../app/utilis/logo/WISDOM\ WAVES\ -\ Logo\ Round.png');
-}
 
 .standardCurriculum {
   background-image: url('../app/utilis//Images/standard.jpg');
 }
+
+.aboutImage{
+  background-image: url("../app/utilis/Images/carousel-1.jpg");
+}
+
 
 .bg-white {
   background-color: #ffffff;
