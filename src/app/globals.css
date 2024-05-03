@@ -50,7 +50,7 @@ form label {
 
 .banner {
   position: relative;
-  background-image: url('../app/utilis/images/carousel-1.jpg');
+  background-image: url('./utilis/images/carousel-1.jpg');
 }
 
 .banner::before {
