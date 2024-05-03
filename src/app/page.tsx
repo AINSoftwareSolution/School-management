@@ -10,6 +10,12 @@ import Square2 from "./utilis/Images/square-shape-img2.jpg";
 import Square3 from "./utilis/Images/square-shape-img3.jpg";
 import Square4 from "./utilis/Images/square-shape-img4.jpg";
 import WelcomeImage from "./utilis/Images/img_wel.webp";
+import { SiSololearn } from "react-icons/si";
+
+import { FaHome } from "react-icons/fa";
+
+import { MdSportsSoccer } from "react-icons/md";
+
 import { FaBus } from "react-icons/fa";
 
 import { FaPaintBrush, FaMusic } from "react-icons/fa";
@@ -452,11 +458,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <FaBus className="bg-white text-red-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-red-400 mb-3">School Bus</h3>
+                <div className="bg-gray-300 hover:bg-red-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    School Bus
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -473,11 +481,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <MdSportsSoccer className="bg-white text-green-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Playground</h3>
+                <div className="bg-gray-300 hover:bg-green-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Playground
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -493,11 +503,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <FaHome className="bg-white text-yellow-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Healthy Canteen</h3>
+                <div className="bg-gray-300 hover:bg-yellow-400 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Healthy Canteen
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -513,106 +525,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <SiSololearn className="bg-white text-blue-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Positive Learning</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-xxl py-5">
-        <div className="container">
-          <div
-            className="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-          // style="max-width: 600px;"
-          >
-            <h1 className="mb-3">School Facilities</h1>
-            <p>
-              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
-              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
-              rebum vero dolor duo.
-            </p>
-          </div>
-          <div className="row g-4">
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-primary">
-                  <span className="bg-primary"></span>
-                  <i className="fa fa-bus-alt fa-3x text-primary"></i>
-                  <span className="bg-primary"></span>
-                </div>
-                <div className="facility-text bg-primary">
-                  <h3 className="text-primary mb-3">School Bus</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-success">
-                  <span className="bg-success"></span>
-                  <i className="fa fa-futbol fa-3x text-success"></i>
-                  <span className="bg-success"></span>
-                </div>
-                <div className="facility-text bg-success">
-                  <h3 className="text-success mb-3">Playground</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-warning">
-                  <span className="bg-warning"></span>
-                  <i className="fa fa-home fa-3x text-warning"></i>
-                  <span className="bg-warning"></span>
-                </div>
-                <div className="facility-text bg-warning">
-                  <h3 className="text-warning mb-3">Healthy Canteen</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.7s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-info">
-                  <span className="bg-info"></span>
-                  <i className="fa fa-chalkboard-teacher fa-3x text-info"></i>
-                  <span className="bg-info"></span>
-                </div>
-                <div className="facility-text bg-info">
-                  <h3 className="text-info mb-3">Positive Learning</h3>
+                <div className="bg-gray-300 hover:bg-blue-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Positive Learning
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
