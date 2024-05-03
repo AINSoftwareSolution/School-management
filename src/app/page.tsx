@@ -10,6 +10,12 @@ import Square2 from "./utilis/Images/square-shape-img2.jpg";
 import Square3 from "./utilis/Images/square-shape-img3.jpg";
 import Square4 from "./utilis/Images/square-shape-img4.jpg";
 import WelcomeImage from "./utilis/Images/img_wel.webp";
+import { SiSololearn } from "react-icons/si";
+
+import { FaHome } from "react-icons/fa";
+
+import { MdSportsSoccer } from "react-icons/md";
+
 import { FaBus } from "react-icons/fa";
 
 import { FaPaintBrush, FaMusic } from "react-icons/fa";
@@ -29,46 +35,44 @@ export default function Home() {
     <main>
       {/* banner */}
       <div className="container-fluid p-0 mb-5">
-        <div className="owl-carousel header-carousel relative">
-          {/* Use Next.js Image component */}
-          <Image
-            src={Image1}
-            alt="Banner Image"
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0 w-full h-screen"
-          />
-          <div className="container">
-            <div className="row justify-start">
-              <div className="col-10 lg:col-8">
-                {/* Ensure that the h1 and p elements have a higher z-index to ensure visibility */}
-                <div className="relative z-10">
-                  <h1 className="text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 animated slideInDown">
-                    The Best Kindergarten School For Your Child
-                  </h1>
-                  <p className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4 pb-2">
-                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
-                    diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
-                    sea elitr.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="btn btn-primary rounded-full py-3 px-5 md:py-4 md:px-6 me-3 animated slideInLeft"
-                >
-                  Learn More
-                </a>
-                <a
-                  href="#"
-                  className="btn btn-dark rounded-full py-3 px-5 md:py-4 md:px-6 animated slideInRight"
-                >
-                  Our Classes
-                </a>
-              </div>
-            </div>
-          </div>
+  <div className="w-full h-screen owl-carousel header-carousel relative">
+    {/* Use Next.js Image component */}
+    <Image
+      src={Image1}
+      alt="Banner Image"
+      layout="fill"
+      objectFit="cover"
+      className="absolute top-0 left-0 w-full h-screen"
+    />
+    <div className="container h-full">
+      <div className="flex  text-white p-4 ">
+        {/* Ensure that the h1 and p elements have a higher z-index to ensure visibility */}
+        <div className="relative">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 animated slideInDown">
+            The Best Kindergarten School For Your Child
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 ml-2 pb-2">
+            Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no.
+            Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
+          </p>
         </div>
+        <button
+          className="btn btn-primary rounded-full py-3 px-5 md:py-4 md:px-6 me-3 animated slideInLeft"
+          onClick={() => { /* Add your onClick handler here */ }}
+        >
+          Learn More
+        </button>
+        <a
+          href="#"
+          className="btn btn-dark rounded-full py-3 px-5 md:py-4 md:px-6 animated slideInRight"
+        >
+          Our Classes
+        </a>
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* welcome section */}
 
@@ -478,11 +482,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <FaBus className="bg-white text-red-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-red-400 mb-3">School Bus</h3>
+                <div className="bg-gray-300 hover:bg-red-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    School Bus
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -499,11 +505,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <MdSportsSoccer className="bg-white text-green-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Playground</h3>
+                <div className="bg-gray-300 hover:bg-green-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Playground
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -519,11 +527,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <FaHome className="bg-white text-yellow-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Healthy Canteen</h3>
+                <div className="bg-gray-300 hover:bg-yellow-400 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Healthy Canteen
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
@@ -539,106 +549,13 @@ export default function Home() {
                 <div className="flex items-center justify-center bg-primary rounded-full h-16 w-16 mb-3">
                   <span className="bg-primary rounded-full"></span>
 
-                  <FaBus className="bg-purple-400 text-red-400 w-full h-full rounded-full" />
+                  <SiSololearn className="bg-white text-blue-500 w-full h-full rounded-full" />
                   <span className="bg-primary rounded-full"></span>
                 </div>
-                <div className="bg-purple-300 p-4 rounded-full text-center">
-                  <h3 className="text-primary mb-3">Positive Learning</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container-xxl py-5">
-        <div className="container">
-          <div
-            className="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-            // style="max-width: 600px;"
-          >
-            <h1 className="mb-3">School Facilities</h1>
-            <p>
-              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
-              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
-              rebum vero dolor duo.
-            </p>
-          </div>
-          <div className="row g-4">
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-primary">
-                  <span className="bg-primary"></span>
-                  <i className="fa fa-bus-alt fa-3x text-primary"></i>
-                  <span className="bg-primary"></span>
-                </div>
-                <div className="facility-text bg-primary">
-                  <h3 className="text-primary mb-3">School Bus</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-success">
-                  <span className="bg-success"></span>
-                  <i className="fa fa-futbol fa-3x text-success"></i>
-                  <span className="bg-success"></span>
-                </div>
-                <div className="facility-text bg-success">
-                  <h3 className="text-success mb-3">Playground</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-warning">
-                  <span className="bg-warning"></span>
-                  <i className="fa fa-home fa-3x text-warning"></i>
-                  <span className="bg-warning"></span>
-                </div>
-                <div className="facility-text bg-warning">
-                  <h3 className="text-warning mb-3">Healthy Canteen</h3>
-                  <p className="mb-0">
-                    Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
-                    ipsum sit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.7s"
-            >
-              <div className="facility-item">
-                <div className="facility-icon bg-info">
-                  <span className="bg-info"></span>
-                  <i className="fa fa-chalkboard-teacher fa-3x text-info"></i>
-                  <span className="bg-info"></span>
-                </div>
-                <div className="facility-text bg-info">
-                  <h3 className="text-info mb-3">Positive Learning</h3>
+                <div className="bg-gray-300 hover:bg-blue-500 p-4 rounded-full text-center">
+                  <h3 className="text-black text-2xl text-bold mb-3">
+                    Positive Learning
+                  </h3>
                   <p className="mb-0">
                     Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero
                     ipsum sit
