@@ -1,11 +1,10 @@
 'use client'
 import Link from "next/link"
-import { InputField } from "@/app/component"
+import { InputField, Alert } from "@/app/component"
 import { admissionLoginvalidationSchema } from "@/app/utilis/schema";
 import { useFormik } from "formik";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Alert from "@/app/component/alert";
 import { Alertprops } from "@/app/utilis/type";
 
 const Login = () => {
@@ -22,6 +21,7 @@ const Login = () => {
     const router = useRouter();
     const formik = useFormik({
         initialValues: {
+            
             username: '',
             password: ''
         },
