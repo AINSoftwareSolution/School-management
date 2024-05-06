@@ -1,29 +1,24 @@
-import Image from 'next/image';
-import Image1 from "./utilis/Images/carousel-1.jpg";
+
+import Link from "next/link"; 
 
 function AboutUsPage() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <div className="container mx-auto py-12 px-4">
-        <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="relative h-96">
-           
-            <Image
-              src={Image1}
-              alt="About Us Banner"
-              layout="fill"
-              objectFit="cover"
-              className="object-cover"
-            />
-          </div>
-          <div className="px-8 py-6">
-            <h1 className="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
-            <p className="text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dapibus lorem, eget ultrices mauris. Integer eget sodales quam. Duis vestibulum ligula eget justo dapibus, ac tincidunt nulla luctus. Vivamus volutpat eleifend vehicula. 
-            </p>
+    <div className="bg-cover bg-top bg-fixed h-[90vh] flex items-center banner border">
+    
+     
+        <div className="flex justify-start">
+          <div className="w-10/12 lg:w-8/12 z-10">
+            <h1 className="text-4xl lg:text-6xl text-white mb-6 leading-7">Make A Brighter Future For Your Child</h1>
+            <p className="text-lg lg:text-xl font-medium text-white mb-6 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+            <Link href="" className="bg-[#cba347] text-white rounded-full py-2 sm:py-4 px-4 sm:px-9 me-3">
+              Our Classes
+            </Link>
+            <Link href="" className="bg-purple-800 text-white rounded-full py-2 sm:py-4 px-4 sm:px-9 ">
+              Learn More
+            </Link>
           </div>
         </div>
-      </div>
+   
     </div>
   );
 }
