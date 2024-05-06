@@ -1,3 +1,6 @@
+import { MdOutlineSportsSoccer, MdSportsEsports } from 'react-icons/md';
+import { FaMusic, FaPaintBrush } from 'react-icons/fa';
+
 export const admissionClassoption = [
   { value: "nursery", label: "Nursery" },
   { value: "playGroup", label: "Play Group" },
@@ -164,4 +167,51 @@ export const initialDetailsData = {
   reason_of_withdrawal: "",
 };
 
+
+export const faqData = [
+  {
+      question: "Why is Preschool education important?",
+      answer: "Research has proved that up to the age of 5 years, the brain forms as many as 700 neural connections per second. As the pace of development in these early years is extremely rapid, it becomes crucial to give the right knowledge, exposure and experiences to the children at this stage. The impressions formed in their minds during these formative years are known to last a lifetime."
+  },
+  {
+      question: "What is the right time to send a child to preschool?",
+      answer: "Ideally you should start sending your child to preschools between the age of 18 months to 2 years."
+  },
+  {
+      question: "What makes Wisdom Waves School unique?",
+      answer: "At Wisdom Waves School, we prioritize holistic development by offering a range of activities, including cognitive development, social and emotional well-being, and exposure to technology through our coding program with KUBO."
+  },
+  {
+      question: "Does Wisdom Waves School have a proper apparatus for teaching coding?",
+      answer: "Yes, we do! Meet KUBO — a simple plug-and-learn robot that makes teaching and learning coding as easy as solving a puzzle. KUBO is a new multi-award-winning classroom solution that breaks down barriers to teaching technology to children as young as four years old."
+  }
+];
+
+
+export const activitiesData = [
+  {
+      // icon: <MdOutlineSportsSoccer />,
+      color: 'bg-red-500',
+      title: 'Sport',
+      description: 'Engage in physical activities and sportsmanship. Participating in sports activities promotes physical fitness and overall well-being among students. Sports teach the value of collaboration and teamwork.'
+  },
+  {
+      // icon: <FaMusic />,
+      color: 'bg-blue-500',
+      title: 'Music',
+      description: 'Explore the world of music and rhythm. Music offers children a creative outlet for self-expression, fosters cognitive development, and promotes social skills through collaborative activities.'
+  },
+  {
+      // icon: <FaPaintBrush />,
+      color: 'bg-yellow-400',
+      title: 'Painting',
+      description: 'Express yourself through colors and creativity. Painting activities encourage children to unleash their creativity and imagination, develop fine motor skills and coordination, and engage in sensory exploration.'
+  },
+  {
+      // icon: <MdSportsEsports />,
+      color: 'bg-green-500',
+      title: 'Playground',
+      description: 'Enjoy recreational activities and outdoor fun. Playground activities promote physical development, social interaction, and imaginative play. Children engage in various outdoor activities such as climbing.'
+  }
+];
 
