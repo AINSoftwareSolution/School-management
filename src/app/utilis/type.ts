@@ -2,6 +2,7 @@ import { ChangeEvent, ReactNode } from "react";
 
 export interface ContainerProps {
   children: ReactNode;
+  id?: string;
 }
 
 export interface InputProps {
