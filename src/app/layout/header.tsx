@@ -42,16 +42,16 @@ const Header: React.FC = () => {
                                 <Link href="#" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0" aria-current="page">Home</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0" >About</Link>
+                                <Link href="#about" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0" >About</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</Link>
+                                <Link href="#programs" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Programs</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</Link>
+                                <Link href="#faq" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">FAQ</Link>
                             </li>
                             <li>
-                                <Link href="#" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</Link>
+                                <Link href="#contact" className="block py-2 px-3 text-purple-900 font-[700] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</Link>
                             </li>
                         </ul>
                     </div>

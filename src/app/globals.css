@@ -64,7 +64,7 @@ form label {
    z-index: 1;
 }
 
-.border::before, .banner::after {
+.border-a::before, .border-a::after {
   position: absolute;
   content: "";
   width: 100%;
