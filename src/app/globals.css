@@ -173,5 +173,36 @@ form label {
 }
 
 
+.schoolImage{
+  background-image: url('./utilis/Images/school\ About\ Image.png');
+  box-shadow: none;
+}
+.MathsImage{
+  background-image: url('./utilis/Images/mathsImg.jpg');
+}
+.course
+.star-rating span:before{
+  color: aqua;
+}
+
+.star-rating 
+span::before{
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+::before{
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
 
 
