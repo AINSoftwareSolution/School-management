@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Image1 from "./utilis/Images/carousel-1.jpg";
-import Image2 from "./utilis/Images/carousel-2.jpg";
-import Image3 from "./utilis/Images/microscope.png";
-import WelcomeImage from "./utilis/Images/img_wel.webp";
+import Image1 from "./utilis/images/carousel-1.jpg";
+import Image2 from "./utilis/images/carousel-2.jpg";
+import Image3 from "./utilis/images/microscope.png";
+import WelcomeImage from "./utilis/images/img_wel.webp";
+import banner1 from './utilis/images/carousel-1.jpg'
 import { Container } from "./component";
 import { useState } from "react";
 import { activitiesData, faqData } from "./utilis/data";
@@ -20,7 +21,8 @@ export default function Home() {
   return (
     <main>
       {/* banner */}
-      <div className="bg-cover bg-top bg-fixed min-h-screen flex items-center banner border-a" >
+      <div className="bg-cover bg-top bg-fixed min-h-screen flex items-center banner border-a"  
+      style={{backgroundImage:`url(${banner1?.src})`}}>
         <Container>
           <div className="flex justify-start ">
             <div className="w-10/12 lg:w-8/12 z-10">
@@ -44,7 +46,16 @@ export default function Home() {
 
       <Container>
         <div className="flex flex-wrap justify-center items-center my-8" id="about">
-          <div className="w-full md:w-[60%] mb-8 md:mb-0">
+          {/*<!-- Right Column --> */}
+          <div className="w-full md:w-[40%] px-3">
+            <Image
+              src={WelcomeImage}
+              alt="welcome-image"
+              width={700}
+              height={700}
+            />
+          </div>
+          <div className="w-full md:w-[60%] mb-8 md:mb-0 pe-0 md:pr-4">
             <div className="text-center md:text-left">
               <h1 className="text-blue-500 text-4xl font-bold mb-4 mt-8">
                 Welcome To Wisdom Waves School
@@ -108,16 +119,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/*<!-- Right Column --> */}
-          <div className="w-full md:w-[40%] px-3">
-            <Image
-              src={WelcomeImage}
-              alt="welcome-image"
-              width={700}
-              height={700}
-            />
-          </div>
         </div>
 
 
@@ -125,7 +126,7 @@ export default function Home() {
         <div className="flex flex-col justify-start items-center py-8 my-8" id="program">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-red-500 mb-8">
-              Standard Curriculum
+              Our Programs
             </h1>
             <div className="flex justify-center items-center">
               <hr className="w-48 border-t-2 border-pink-600" />
@@ -226,8 +227,8 @@ export default function Home() {
 
         {/* faq */}
         <div className="my-8" id="faq">
-          <div className="  text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Frequently Asked Questions</h2>
+          <div className="text-center mt-4">
+            <h2 className="text-3xl font-bold text-black sm:text-4xl lg:text-5xl">Frequently Asked Questions</h2>
             <p className=" mx-auto mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</p>
           </div>
 
