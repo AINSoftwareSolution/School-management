@@ -172,33 +172,31 @@ form label {
   color: #FFFFFF !important;
 }
 
-.AboutImage {
-  background-image: url('./utilis/images/AboutImage.jpg');
-  
+
+.schoolImage{
+  background-image: url('./utilis/Images/school\ About\ Image.png');
+  box-shadow: none;
 }
-.AboutImage::before {
-  content: "";
-  position: absolute;
+.MathsImage{
+  background-image: url('./utilis/Images/mathsImg.jpg');
+}
+.course
+.star-rating span:before{
+  color: aqua;
+}
+
+.star-rating 
+span::before{
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgb(0 0 0 / 17%), rgba(0, 0, 0, 0.7)); 
-   z-index: 1;
-}
-
-.border::before, .AboutImage::after {
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 10px;
-  top: 0;
   left: 0;
-  background: url('./utilis/images/border.png') center center repeat-x;
-  z-index: 1;
 }
-
-
+::before{
+  box-sizing: border-box;
+}
 
 
 
