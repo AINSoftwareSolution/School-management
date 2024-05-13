@@ -50,7 +50,7 @@ form label {
 
 .banner {
   position: relative;
-  background-image: url('./utilis/images/carousel-1.jpg');
+  /* background-image: url('./utilis/images/carousel-1.jpg'); */
 }
 
 
@@ -72,15 +72,10 @@ form label {
   height: 10px;
   top: 0;
   left: 0;
-  background: url('./utilis/images/border.png') center center repeat-x;
+  /* background: url('./utilis/images/border.png') center center repeat-x; */
   z-index: 1;
 }
 
-
-
-/* .standardCurriculum {
-  background-image: url('../app/utilis//Images/standard.jpg');
-} */
 
 
 .section-title {
@@ -174,11 +169,11 @@ form label {
 
 
 .schoolImage{
-  background-image: url('./utilis/Images/school\ About\ Image.png');
+  /* background-image: url('./utilis/Images/school\ About\ Image.png'); */
   box-shadow: none;
 }
 .MathsImage{
-  background-image: url('./utilis/Images/mathsImg.jpg');
+  /* background-image: url('./utilis/Images/mathsImg.jpg'); */
 }
 .course
 .star-rating span:before{

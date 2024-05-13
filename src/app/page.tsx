@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Image1 from "./utilis/Images/carousel-1.jpg";
-import Image2 from "./utilis/Images/carousel-2.jpg";
-import Image3 from "./utilis/Images/microscope.png";
-import WelcomeImage from "./utilis/Images/img_wel.webp";
+import Image1 from "./utilis/images/carousel-1.jpg";
+import Image2 from "./utilis/images/carousel-2.jpg";
+import Image3 from "./utilis/images/microscope.png";
+import WelcomeImage from "./utilis/images/img_wel.webp";
+import banner1 from './utilis/images/carousel-1.jpg'
 import { Container } from "./component";
 import { useState } from "react";
 import { activitiesData, faqData } from "./utilis/data";
@@ -20,7 +21,8 @@ export default function Home() {
   return (
     <main>
       {/* banner */}
-      <div className="bg-cover bg-top bg-fixed min-h-screen flex items-center banner border-a" >
+      <div className="bg-cover bg-top bg-fixed min-h-screen flex items-center banner border-a"  
+      style={{backgroundImage:`url(${banner1?.src})`}}>
         <Container>
           <div className="flex justify-start ">
             <div className="w-10/12 lg:w-8/12 z-10">
