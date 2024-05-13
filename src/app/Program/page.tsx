@@ -1,18 +1,18 @@
 import { Container } from "../component";
 import Image from "next/image";
-import progrmamImage from "../utilis/images/ProgramImage.jpg"
-import PlaygroupImage from "../utilis/images/playgroupImage.jpg"
+// import progrmamImage from "../utilis/images/ProgramImage.jpg"
+// import PlaygroupImage from "../utilis/images/playgroupImage.jpg"
 
 const Programs = () => {
   return (
     <main>
       <Container>
         <div className=" w-full h-[60vh]">
-          <Image
+          {/* <Image
             src={progrmamImage}
             alt=""
             className=" w-full h-full"
-          />
+          /> */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
 
             <h2 className="text-4xl mb-2">Programs</h2>
@@ -35,11 +35,11 @@ const Programs = () => {
 
 
         <div className="hidden lg:block col-span-1 lg:col-span-1">
-          <Image
+          {/* <Image
             src={PlaygroupImage}
             alt=''
             className=""
-          />
+          /> */}
         </div>
       </div>
 
@@ -142,11 +142,11 @@ const Programs = () => {
       {/* 3rd column */}
       <Container>
         <div className=" w-full h-[60vh] bg-shadow-lg">
-          <Image
+          {/* <Image
             src={progrmamImage}
             alt=""
             className=" w-full h-full"
-          />
+          /> */}
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
             <h2 className="text-4xl mb-2">Programs</h2>
