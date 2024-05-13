@@ -12,5 +12,4 @@ const AdmissionButton = () => {
         </>
     );
 };
-
 export default AdmissionButton;

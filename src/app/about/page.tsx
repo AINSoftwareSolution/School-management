@@ -10,30 +10,28 @@ import AboutImage from "../utilis/Images/AboutImage.jpg"
 const About = () => {
   return (
     <main>
-   <Container>
-  <div className="relative w-full h-[60vh]">
-    {/* Image */}
-    <Image
-      src={AboutImage}
-      alt=""
-      className="object-cover w-full h-full"
-    />
-    
-    {/* Text container */}
-    <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-      {/* Heading */}
-      <h2 className="text-4xl mb-2">About Us</h2>
-      {/* Text */}
-      <p className="mt-2">
-        <span>Home</span> 
-        <FaAngleRight className="inline mx-2" /> 
-        <span>About</span>
-      </p>
-    </div>
-  </div>
-</Container>
+      <Container>
+        <div className="relative w-full h-[60vh]">
+          {/* Image */}
+          <Image
+            src={AboutImage}
+            alt=""
+            className="object-cover w-full h-full"
+          />
 
-
+          {/* Text container */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+            {/* Heading */}
+            <h2 className="text-4xl mb-2">About Us</h2>
+            {/* Text */}
+            <p className="mt-2">
+              <span>Home</span>
+              <FaAngleRight className="inline mx-2" />
+              <span>About</span>
+            </p>
+          </div>
+        </div>
+      </Container>
 
       <Container>
         {/* Next section */}
